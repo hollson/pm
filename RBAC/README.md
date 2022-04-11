@@ -1,6 +1,7 @@
-## RBAC是什么
+# RBAC(基于角色的访问控制)
 
-**RBAC (`Role-Based Access Control`)： **即基于角色的**访问控制模型**。
+
+**RBAC (`Role-Based Access Control`)** 即基于角色的访问控制模型。
 
 RBAC也就是需求发掘所用到的**Who**(角色)、**What**(拥有什么资源)、**How**(有哪些操作)。它们构成了访问权限三元组，即：Who对What进行How的操作。
 
