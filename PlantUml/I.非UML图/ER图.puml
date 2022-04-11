@@ -1,0 +1,59 @@
+@startuml
+title 定义实体
+entity Entity1
+
+entity Entity2 {
+   可选属性1
+   可选属性2
+   ---
+   **可选粗体属性**
+   ---
+   * **强制属性（星号可修改可见性）**
+}
+
+newpage
+title 实体关系
+entity A
+entity B
+entity C
+entity D
+entity E
+entity F
+entity G
+entity H
+
+A --o| B:零或一个
+C --|| D:正好一个
+E --o{ F:零或多个
+G --|{ H:一或多个
+
+newpage
+title 实体关系图示例
+'可修改样式
+hide circle
+skinparam linetype ortho
+
+entity "Entity01" as e01 {
+  *e1_id : number <<generated>>
+  --
+  *name : text
+  description : text
+}
+
+entity "Entity02" as e02 {
+  *e2_id : number <<generated>>
+  --
+  *e1_id : number <<FK>>
+  other_details : text
+}
+
+entity "Entity03" as e03 {
+  *e3_id : number <<generated>>
+  --
+  e1_id : number <<FK>>
+  other_details : text
+}
+
+e01 ||..o{ e02
+e01 |o..o{ e03
+@enduml

@@ -1,0 +1,21 @@
+@startuml
+
+note as xxx
+
+**业务需求: **
+* 某酒店可对外开放50个双人间和20个单人间；
+* 周一至周五房价5折优惠，周六日全价；
+* 旅客可以直接办理入住或提前预约，都需要登记跟人信息；
+* 预定房间需要订金，24小时之前可以免费取消,24小时之内不退订金；
+* 先交付房费再入住；
+* 酒店经理需要查询每月的预定情况和入住情况的详细信息。
+
+end note
+
+newpage
+header 业务建模
+title 业务用例
+actor 旅客 as traveler
+usecase 住宿 as stay
+traveler -right- stay
+@enduml

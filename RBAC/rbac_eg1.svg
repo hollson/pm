@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="460.8px" preserveAspectRatio="none" style="width:454px;height:460px;background:#FFFFFF;" version="1.1" viewBox="0 0 454 460" width="454.8px" zoomAndPan="magnify"><defs><filter height="300%" id="f28rkr7k5g67r" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.4"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.8" dy="4.8" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="21.6" lengthAdjust="spacing" textLength="217.2" x="111" y="20.8828">RBAC-权限管理模型图</text><!--MD5=[e59cf999063292dce8d6ea34dd10a338]
+class user--><rect codeLine="4" fill="#FEFECE" filter="url(#f28rkr7k5g67r)" height="88.6922" id="user" style="stroke:#A80036;stroke-width:1.7999999999999998;" width="115.2" x="8.4" y="194.6391"/><ellipse cx="41.52" cy="213.8391" fill="#ADD1B2" rx="13.2" ry="13.2" style="stroke:#A80036;stroke-width:1.2;"/><path d="M45.8571,221.6391 L36.5934,221.6391 L36.5934,206.7674 L45.8571,206.7674 L45.8571,209.3572 L39.5319,209.3572 L39.5319,212.5646 L45.2595,212.5646 L45.2595,215.1545 L39.5319,215.1545 L39.5319,219.0492 L45.8571,219.0492 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14.4" lengthAdjust="spacing" textLength="43.2" x="61.68" y="219.2813">用户表</text><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="9.6" x2="122.4" y1="233.0391" y2="233.0391"/><ellipse cx="21.6" cy="246.2391" fill="#000000" rx="3.6" ry="3.6" style="stroke:#000000;stroke-width:1.2;"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="84" x="32.4" y="250.6008">用户ID  &lt;PK&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="39.6" x="32.4" y="266.1469">用户名</text><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="9.6" x2="122.4" y1="273.7313" y2="273.7313"/><!--MD5=[230c8b93044a8b32754c79e4598c3632]
+class role--><rect codeLine="9" fill="#FEFECE" filter="url(#f28rkr7k5g67r)" height="88.6922" id="role" style="stroke:#A80036;stroke-width:1.7999999999999998;" width="115.2" x="165.6" y="194.6391"/><ellipse cx="198.72" cy="213.8391" fill="#ADD1B2" rx="13.2" ry="13.2" style="stroke:#A80036;stroke-width:1.2;"/><path d="M203.0571,221.6391 L193.7934,221.6391 L193.7934,206.7674 L203.0571,206.7674 L203.0571,209.3572 L196.7319,209.3572 L196.7319,212.5646 L202.4595,212.5646 L202.4595,215.1545 L196.7319,215.1545 L196.7319,219.0492 L203.0571,219.0492 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14.4" lengthAdjust="spacing" textLength="43.2" x="218.88" y="219.2813">角色表</text><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="166.8" x2="279.6" y1="233.0391" y2="233.0391"/><ellipse cx="178.8" cy="246.2391" fill="#000000" rx="3.6" ry="3.6" style="stroke:#000000;stroke-width:1.2;"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="84" x="189.6" y="250.6008">角色ID  &lt;PK&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="39.6" x="189.6" y="266.1469">角色名</text><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="166.8" x2="279.6" y1="273.7313" y2="273.7313"/><!--MD5=[709ccdcfb80c42dc7c8b224e49d659f0]
+class perm--><rect codeLine="14" fill="#FEFECE" filter="url(#f28rkr7k5g67r)" height="88.6922" id="perm" style="stroke:#A80036;stroke-width:1.7999999999999998;" width="115.2" x="322.8" y="194.6391"/><ellipse cx="355.92" cy="213.8391" fill="#ADD1B2" rx="13.2" ry="13.2" style="stroke:#A80036;stroke-width:1.2;"/><path d="M360.2571,221.6391 L350.9934,221.6391 L350.9934,206.7674 L360.2571,206.7674 L360.2571,209.3572 L353.9319,209.3572 L353.9319,212.5646 L359.6595,212.5646 L359.6595,215.1545 L353.9319,215.1545 L353.9319,219.0492 L360.2571,219.0492 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14.4" lengthAdjust="spacing" textLength="43.2" x="376.08" y="219.2813">权限表</text><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="324" x2="436.8" y1="233.0391" y2="233.0391"/><ellipse cx="336" cy="246.2391" fill="#000000" rx="3.6" ry="3.6" style="stroke:#000000;stroke-width:1.2;"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="84" x="346.8" y="250.6008">权限ID  &lt;PK&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="66" x="346.8" y="266.1469">权限标识符</text><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="324" x2="436.8" y1="273.7313" y2="273.7313"/><!--MD5=[819642ff4bbc19ba21fd76f917eb82ae]
+class user_role--><rect codeLine="19" fill="#99FF99" filter="url(#f28rkr7k5g67r)" height="88.6922" id="user_role" style="stroke:#A80036;stroke-width:1.7999999999999998;" width="139.2" x="30" y="355.4391"/><ellipse cx="48" cy="374.6391" fill="#ADD1B2" rx="13.2" ry="13.2" style="stroke:#A80036;stroke-width:1.2;"/><path d="M52.3371,382.4391 L43.0734,382.4391 L43.0734,367.5674 L52.3371,367.5674 L52.3371,370.1572 L46.0119,370.1572 L46.0119,373.3646 L51.7395,373.3646 L51.7395,375.9545 L46.0119,375.9545 L46.0119,379.8492 L52.3371,379.8492 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14.4" lengthAdjust="spacing" textLength="100.8" x="64.8" y="380.0813">用户角色关联表</text><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="31.2" x2="168" y1="393.8391" y2="393.8391"/><ellipse cx="43.2" cy="407.0391" fill="#000000" rx="3.6" ry="3.6" style="stroke:#000000;stroke-width:1.2;"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="80.4" x="54" y="411.4008">用户ID &lt;FK&gt;</text><ellipse cx="43.2" cy="422.5852" fill="#000000" rx="3.6" ry="3.6" style="stroke:#000000;stroke-width:1.2;"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="80.4" x="54" y="426.9469">角色ID &lt;FK&gt;</text><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="31.2" x2="168" y1="434.5313" y2="434.5313"/><!--MD5=[c2edda6906e01af61714c8798f19eb18]
+class role_perm--><rect codeLine="24" fill="#99FF99" filter="url(#f28rkr7k5g67r)" height="88.6922" id="role_perm" style="stroke:#A80036;stroke-width:1.7999999999999998;" width="139.2" x="277.2" y="355.4391"/><ellipse cx="295.2" cy="374.6391" fill="#ADD1B2" rx="13.2" ry="13.2" style="stroke:#A80036;stroke-width:1.2;"/><path d="M299.5371,382.4391 L290.2734,382.4391 L290.2734,367.5674 L299.5371,367.5674 L299.5371,370.1572 L293.2119,370.1572 L293.2119,373.3646 L298.9395,373.3646 L298.9395,375.9545 L293.2119,375.9545 L293.2119,379.8492 L299.5371,379.8492 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14.4" lengthAdjust="spacing" textLength="100.8" x="312" y="380.0813">角色权限关联表</text><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="278.4" x2="415.2" y1="393.8391" y2="393.8391"/><ellipse cx="290.4" cy="407.0391" fill="#000000" rx="3.6" ry="3.6" style="stroke:#000000;stroke-width:1.2;"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="80.4" x="301.2" y="411.4008">角色ID &lt;FK&gt;</text><ellipse cx="290.4" cy="422.5852" fill="#000000" rx="3.6" ry="3.6" style="stroke:#000000;stroke-width:1.2;"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="80.4" x="301.2" y="426.9469">权限ID &lt;FK&gt;</text><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="278.4" x2="415.2" y1="434.5313" y2="434.5313"/><!--MD5=[d2293327b5d2c5d638c5b360f8314cfe]
+class user_perm--><rect codeLine="29" fill="#70D4FF" filter="url(#f28rkr7k5g67r)" height="88.6922" id="user_perm" style="stroke:#A80036;stroke-width:1.7999999999999998;" width="139.2" x="153.6" y="33.8391"/><ellipse cx="171.6" cy="53.0391" fill="#ADD1B2" rx="13.2" ry="13.2" style="stroke:#A80036;stroke-width:1.2;"/><path d="M175.9371,60.8391 L166.6734,60.8391 L166.6734,45.9674 L175.9371,45.9674 L175.9371,48.5572 L169.6119,48.5572 L169.6119,51.7646 L175.3395,51.7646 L175.3395,54.3545 L169.6119,54.3545 L169.6119,58.2492 L175.9371,58.2492 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14.4" lengthAdjust="spacing" textLength="100.8" x="188.4" y="58.4812">特殊权限关联表</text><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="154.8" x2="291.6" y1="72.2391" y2="72.2391"/><ellipse cx="166.8" cy="85.4391" fill="#000000" rx="3.6" ry="3.6" style="stroke:#000000;stroke-width:1.2;"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="80.4" x="177.6" y="89.8008">用户ID &lt;FK&gt;</text><ellipse cx="166.8" cy="100.9852" fill="#000000" rx="3.6" ry="3.6" style="stroke:#000000;stroke-width:1.2;"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="80.4" x="177.6" y="105.3469">权限ID &lt;FK&gt;</text><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="154.8" x2="291.6" y1="112.9312" y2="112.9312"/><!--MD5=[4928a4920015266f1607833d3dc5f4e0]
+reverse link role to role_perm--><path codeLine="34" d="M260.712,288.3111 C277.38,309.6711 296.856,334.6311 313.068,355.4031 " fill="none" id="role-backto-role_perm" style="stroke:#A80036;stroke-width:1.2;"/><polygon fill="#A80036" points="256.98,283.5231,259.8561,294.9864,260.6778,288.2481,267.4162,289.0698,256.98,283.5231" style="stroke:#A80036;stroke-width:1.2;"/><!--MD5=[4c21794cd444a314e94d639a04415975]
+reverse link perm to role_perm--><path codeLine="35" d="M369.864,289.9311 C365.4,310.9311 360.264,335.1591 355.968,355.4031 " fill="none" id="perm-backto-role_perm" style="stroke:#A80036;stroke-width:1.2;"/><polygon fill="#A80036" points="371.22,283.5231,364.298,293.1025,369.9839,289.3944,373.6921,295.0803,371.22,283.5231" style="stroke:#A80036;stroke-width:1.2;"/><!--MD5=[c236c3b2fe68c072d4f98d573ec60bfe]
+reverse link user to user_role--><path codeLine="36" d="M76.536,289.9311 C81,310.9311 86.136,335.1591 90.432,355.4031 " fill="none" id="user-backto-user_role" style="stroke:#A80036;stroke-width:1.2;"/><polygon fill="#A80036" points="75.18,283.5231,72.7079,295.0803,76.4161,289.3944,82.102,293.1025,75.18,283.5231" style="stroke:#A80036;stroke-width:1.2;"/><!--MD5=[c9b7514cc0381ee14aec2a04a4055224]
+reverse link role to user_role--><path codeLine="37" d="M185.688,288.3111 C169.02,309.6711 149.544,334.6311 133.332,355.4031 " fill="none" id="role-backto-user_role" style="stroke:#A80036;stroke-width:1.2;"/><polygon fill="#A80036" points="189.42,283.5231,178.9838,289.0698,185.7222,288.2481,186.5439,294.9864,189.42,283.5231" style="stroke:#A80036;stroke-width:1.2;"/><!--MD5=[938b8985753ec7457471b2a6e962da82]
+link user_perm to perm--><path codeLine="38" d="M266.16,122.7231 C286.776,143.5071 311.556,168.4671 332.748,189.8271 " fill="none" id="user_perm-to-perm" style="stroke:#A80036;stroke-width:1.2;"/><polygon fill="#A80036" points="337.5,194.6031,333.3019,183.5552,333.2745,190.3433,326.4863,190.316,337.5,194.6031" style="stroke:#A80036;stroke-width:1.2;"/><!--MD5=[2ce6f40e24eadf8e8fe2302286caf1ba]
+link user_perm to user--><path codeLine="39" d="M180.24,122.7231 C159.624,143.5071 134.844,168.4671 113.652,189.8271 " fill="none" id="user_perm-to-user" style="stroke:#A80036;stroke-width:1.2;"/><polygon fill="#A80036" points="108.9,194.6031,119.9137,190.316,113.1255,190.3433,113.0981,183.5552,108.9,194.6031" style="stroke:#A80036;stroke-width:1.2;"/><!--MD5=[2a0bed6980579c674b5de680e7bf9edd]
+@startuml
+title RBAC-权限管理模型图
+'hide circle
+
+entity "用户表" as user {
+  *用户ID  <PK>
+  用户名
+}
+
+entity "角色表" as role {
+  *角色ID  <PK>
+  角色名
+}
+
+entity "权限表" as perm {
+  *权限ID  <PK>
+  权限标识符
+}
+
+entity "用户角色关联表" as user_role #99FF99 {
+  *用户ID <FK>
+  *角色ID <FK>
+}
+
+entity "角色权限关联表" as role_perm #99FF99 {
+  *角色ID <FK>
+  *权限ID <FK>
+}
+
+entity "特殊权限关联表" as user_perm #70d4ff {
+  *用户ID <FK>
+  *权限ID <FK>
+}
+
+role_perm -up-> role
+role_perm -up-> perm
+user_role -up-> user
+user_role -up-> role
+user_perm - -> perm
+user_perm - -> user
+@enduml
+
+@startuml
+title RBAC-权限管理模型图
+
+entity "用户表" as user {
+  *用户ID  <PK>
+  用户名
+}
+
+entity "角色表" as role {
+  *角色ID  <PK>
+  角色名
+}
+
+entity "权限表" as perm {
+  *权限ID  <PK>
+  权限标识符
+}
+
+entity "用户角色关联表" as user_role #99FF99 {
+  *用户ID <FK>
+  *角色ID <FK>
+}
+
+entity "角色权限关联表" as role_perm #99FF99 {
+  *角色ID <FK>
+  *权限ID <FK>
+}
+
+entity "特殊权限关联表" as user_perm #70d4ff {
+  *用户ID <FK>
+  *权限ID <FK>
+}
+
+role_perm -up-> role
+role_perm -up-> perm
+user_role -up-> user
+user_role -up-> role
+user_perm - -> perm
+user_perm - -> user
+@enduml
+
+PlantUML version 1.2022.1(Wed Feb 02 02:19:58 CST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: zh
+Country: CN
+--></g></svg>

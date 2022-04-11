@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+node "用户接口层" as ui {
+}
+
+node "应用服务层" as app {
+}
+
+node "领域服务" as domain {
+}
+
+node "基础设施层" as infra {
+}
+
+ui --> app
+ui --> domain
+ui --> infra
+app --> domain
+app --> infra
+domain --> infra
+
+@enduml

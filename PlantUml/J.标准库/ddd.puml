@@ -1,0 +1,39 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+!include <tupadr3/common>
+!include <tupadr3/font-awesome/server>
+!include <tupadr3/font-awesome/database>
+
+title Tupadr3库
+
+FA_SERVER(web1,web1) #Green
+FA_SERVER(web2,web2) #Yellow
+FA_SERVER(web3,web3) #Blue
+FA_SERVER(web4,web4) #YellowGreen
+
+FA_DATABASE(db1,LIVE,database,white) #RoyalBlue
+FA_DATABASE(db2,SPARE,database) #Red
+
+db1 <--> db2
+
+web1 <--> db1
+web2 <--> db1
+web3 <--> db1
+web4 <--> db1
+
+
+newpage
+title 数据库
+!include <tupadr3/common>
+!include <tupadr3/devicons/mysql>
+
+DEV_MYSQL(db1)
+DEV_MYSQL(db2,label of db2)
+DEV_MYSQL(db3,label of db3,database)
+DEV_MYSQL(db4,label of db4,database,red) #DeepSkyBlue
+
+
+
+@enduml

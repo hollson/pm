@@ -1,0 +1,41 @@
+@startuml
+title RBAC-权限管理模型图
+'hide circle
+
+entity "用户表" as user {
+  *用户ID  <PK>
+  用户名
+}
+
+entity "角色表" as role {
+  *角色ID  <PK>
+  角色名
+}
+
+entity "权限表" as perm {
+  *权限ID  <PK>
+  权限标识符
+}
+
+entity "用户角色关联表" as user_role #99FF99 {
+  *用户ID <FK>
+  *角色ID <FK>
+}
+
+entity "角色权限关联表" as role_perm #99FF99 {
+  *角色ID <FK>
+  *权限ID <FK>
+}
+
+entity "特殊权限关联表" as user_perm #70d4ff {
+  *用户ID <FK>
+  *权限ID <FK>
+}
+
+role_perm -up-> role
+role_perm -up-> perm
+user_role -up-> user
+user_role -up-> role
+user_perm --> perm
+user_perm --> user
+@enduml

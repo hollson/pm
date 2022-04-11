@@ -1,0 +1,14 @@
+
+@startuml
+actor aaaaaaaaa
+package dddd{
+(dummyLeft)
+(dummyLeft2)
+}
+
+aaaaaaaaa -left-> dddd
+
+aaaaaaaaa -right-> (dummyRight)
+aaaaaaaaa -up-> (dummyUp)
+aaaaaaaaa -down-> (dummyDown)
+@enduml

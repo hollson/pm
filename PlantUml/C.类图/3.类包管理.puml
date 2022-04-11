@@ -1,0 +1,100 @@
+@startuml
+title 抽象类和接口
+abstract class AbstractList
+abstract AbstractCollection
+interface List
+interface Collection
+
+List <|-- AbstractList
+Collection <|-- AbstractCollection
+
+Collection <|- List
+AbstractCollection <|- AbstractList
+AbstractList <|-- ArrayList
+
+class ArrayList {
+  Object[] elementData
+  size()
+}
+
+enum TimeUnit {
+  DAYS
+  HOURS
+  MINUTES
+}
+
+annotation SuppressWarnings
+
+
+newpage
+title 泛型
+class Foo<extends Element> {
+  int size()
+}
+Foo *- Element
+
+
+newpage
+title 特殊标记
+class System << (S,#FF7700) Singleton >>
+class Date << (D,orchid) >>
+
+
+newpage
+title Package
+
+package "Classic Collections" #dddddd {
+  Object <|-- ArrayList
+}
+
+package net.sourceforge.plantuml {
+  Object <|-- Demo1
+  Demo1 *- Demo2
+}
+
+newpage
+title 包样式
+scale 750 width
+package foo1 <<Node>> {
+  class Class1
+}
+
+package foo2 <<Rectangle>> {
+  class Class2
+}
+
+package foo3 <<Folder>> {
+  class Class3
+}
+
+package foo4 <<Frame>> {
+  class Class4
+}
+
+package foo5 <<Cloud>> {
+  class Class5
+}
+
+package foo6 <<Database>> {
+  class Class6
+}
+
+newpage
+title 命名空间
+class BaseClass
+namespace net.dummy #DDDDDD {
+    .BaseClass <|-- Person
+    Meeting o-- Person
+
+    .BaseClass <|- Meeting
+}
+namespace net.foo {
+  net.dummy.Person  <|- Person
+  .BaseClass <|-- Person
+
+  net.dummy.Meeting o-- Person
+}
+BaseClass <|-- net.unused.Person
+note "命名空间与包的区别是：\n不同命名空间下可以\n包含相同名称的类\n" as NS
+
+@enduml

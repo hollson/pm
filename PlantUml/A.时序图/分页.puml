@@ -1,0 +1,20 @@
+@startuml
+title 演示分页、页眉和页脚
+header 这是页眉
+
+客户端 -> 服务端 : 请求消息
+客户端 <-- 服务端 : 响应消息
+footer 第%page%/%lastpage%页
+
+newpage
+header 这是页眉
+footer 第%page%/%lastpage%页
+客户端 -> 服务端 : 请求消息
+客户端 o//-- 服务端 : 响应消息
+
+newpage 标题太长可以\n换行显示
+header 这是页眉
+footer 第%page%/%lastpage%页
+客户端 -> 服务端 : 请求消息
+客户端 <-- 服务端 : 响应消息
+@enduml

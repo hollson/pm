@@ -1,0 +1,26 @@
+@startuml
+====
+autonumber
+客户端 -> 服务端 : 请求消息
+note right:自动消息编号
+客户端 <- 服务端 : 响应消息
+|||
+autonumber 15
+客户端 -> 服务端 : 请求消息
+note right:定义起始消息编号
+客户端 <- 服务端 : 响应消息
+|||
+autonumber 40 10
+客户端 -> 服务端 : 请求消息
+note right:定义起始消息编号和偏移量
+客户端 <- 服务端 : 响应消息
+|||
+autonumber stop
+客户端 -> 服务端 : 无编号消息
+note right:使用"autonumber stop"\n暂停自动编号
+|||
+autonumber resume 1 "<font color=blue><b>消息[0]  "
+客户端 -> 服务端 : 请求消息
+note right:使用"autonumber resume"\n恢复自动编号
+客户端 <- 服务端 : 响应消息
+@enduml

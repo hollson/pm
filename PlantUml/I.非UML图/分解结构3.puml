@@ -1,0 +1,11 @@
+@startwbs
+title 多行文本
+'您可以使用 :和 ;拥有多行框，
+* <&flag> Debian
+** <&globe> Ubuntu
+***:Linux Mint
+Open Source;
+
+*** Kubuntu
+*** ...
+@endwbs

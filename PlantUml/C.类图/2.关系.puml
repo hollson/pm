@@ -1,0 +1,82 @@
+@startuml
+header 类与关系
+title 泛化与实现
+' 泛化【Generalization】表示一种继承关系，用于描述父类与子类之间的关系。
+abstract class Shape
+Shape <|--Triangle:【Generalization】泛化
+note right of Triangle: 三角形继承自图形
+
+' 实现【Realization】是一种类与接口的实现关系
+interface IPay
+IPay<|..AliPay:【Realization】实现
+note right of AliPay: 支付宝实现类支付接口
+
+newpage
+
+header 类与关系
+title 关联与依赖
+' 关联【Association】是一种拥有(has)关系，它使一个类知道另一个类的属性和方法。
+' 依赖 【Dependency】是一种使用(Use)关系，表示一个事物对另一个事物的依赖。
+People --> Phone:关联
+Driver ..> Car:依赖
+note left of Phone: 某人拥有手机
+note right of Car: 司机依赖车
+
+newpage
+
+header 类与关系
+title 聚合与组合
+' 聚合【Aggregation】是一种弱整分关系，部分可以单独存在。
+' 组合【Composition】是一种强整分关系，部分不能离开整体。
+Computer o-- Keyboards:聚合
+Bird *-- Wing:组合
+note left of Keyboards: 键盘可以单独存在
+note right of Wing: 翅膀离不开整体
+
+
+newpage
+header 这是页眉
+title 其他箭头
+A --x B:隔离/无关
+C --{ D:映射多个
+E --+ F:包含
+G --^ H:泛化
+J --# K
+
+
+
+newpage
+
+
+class 汽车
+发动机 - 汽车 : 驱动 >
+汽车 *- 轮子 : 拥有 4 >
+汽车 -- 人 : < 所属
+
+newpage
+title 命令式箭头
+class ArrayList implements Lists
+class ArrayList extends AbstractList
+
+
+newpage
+title 箭头分组
+'几将多个箭头合并
+skinparam groupInheritance 2
+A1 <|-- B1
+A1 <|-- C1
+
+A2 <|.. B2
+A2 <|.. C2
+
+A3 <|-- B3
+A3 <|-- C3
+A3 <|-- D3
+
+A4 *-- B4
+A4 *-- C4
+A4 *-- D4
+A4 *-- E4
+
+
+@enduml

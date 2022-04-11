@@ -1,0 +1,38 @@
+@startuml
+title 箭头示例
+
+Bob -> Alice:请求
+Bob <-- Alice:响应
+Bob ->x Alice:不可达
+
+|||
+
+Bob ->> Alice
+note right: 细箭头
+
+|||
+
+Bob -\ Alice
+Bob \\- Alice
+Bob //-- Alice
+Bob o\\-- Alice
+note right:  单面箭头
+
+|||
+
+Bob ->o Alice
+Bob <-> Alice:双向箭头
+Bob <->o Alice
+note right: 双向箭头
+
+|||
+
+Bob -[#red]> Alice : 红色的箭头
+note right: 修改箭头颜色
+skinparam responseMessageBelowArrow true
+Alice -[#0000FF]->Bob : 响应信息显示在箭头下面
+
+|||
+
+Bob -> Bob : 指向自己
+@enduml

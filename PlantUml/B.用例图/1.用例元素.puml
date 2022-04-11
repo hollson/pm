@@ -1,0 +1,99 @@
+@startuml
+title:系统用例
+header:用例图
+(用例1)
+(用例2) as UC2
+usecase 用例3
+usecase (用例4) as UC4
+
+newpage
+title:业务用例
+header:用例图
+(第一个用例)/
+(第二个用例)/ as (UC2)
+usecase/ UC3
+usecase/ (第四个\n用例) as UC4
+
+note as xxx
+* 业务用例：业务用例体现了需求，比如论坛
+管理员(护用户,维护帖子等)。
+* 系统用例: 系统用例只针对要开发的系统，
+作为一个配合者
+..
+* 业务用例的执行者一般是人或组织，例如广
+告客户、网民、市政机关、教委、图书馆；
+* 系统用例的执行者为实际与系统交互的操作
+人员或程序（外部衔接系统、自动服务、定时器）
+end note
+
+newpage
+
+title:系统角色
+header:用例图
+' 火柴人：默认
+' 用户头像样式：skinparam actorStyle awesome
+' 透明人样式：skinparam actorStyle hollow
+:角色1:
+:角色2: as act2
+actor 角色3
+skinparam actorStyle awesome
+actor :角色4: as act4
+skinparam actorStyle hollow
+"角色5" as act5
+'用例的主体是事件流，事件流分为基本流和备选流
+
+newpage
+title:业务角色
+:第一个参与者:/
+:第二个\n参与者\n:/ as Man2
+actor/ Actor3
+actor/ :第四个参与者: as Person1
+
+newpage
+title:用例关系
+header:用例图
+skinparam actorStyle matchstick
+:用户: --> (Use)
+"使用XX系统" as (Use)
+"管理员“ as Admin
+Admin --> (管理XX系统)
+
+
+
+newpage
+title:用例描述
+header:用例图
+usecase UC1 as "1. 使用换行
+来分割描述用例
+--
+2. 使用双横线（减号）分割
+==
+3. 使用双等号来分割
+..虚线..
+4.使用虚线（双点）来分割
+__
+5. 使用下划线来分割
+"
+UC1 --\\ ddd
+
+newpage
+title:使用包
+header:用例图
+left to right direction    /'方向'/
+actor 客人 as g            /'角色'/
+package 店员 {    /'包1'/
+  actor 厨师 as c
+  actor 收银员 as fc
+}
+package 餐厅 {            /'包2'/
+  usecase " 吃饭 "     as UC1
+  usecase " 喝酒/喝茶 " as UC2
+  usecase " 支付 "     as UC3
+  usecase " 查账 "     as UC4
+}
+fc --> UC4
+g --> UC1
+g --> UC2
+g --> UC3
+
+@enduml

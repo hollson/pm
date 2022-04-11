@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="478.8px" preserveAspectRatio="none" style="width:621px;height:478px;background:#FFFFFF;" version="1.1" viewBox="0 0 621 478" width="621.6px" zoomAndPan="magnify"><defs><filter height="300%" id="f1ltbh81zjcmss" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.4"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.8" dy="4.8" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="21.6" lengthAdjust="spacing" textLength="172.8" x="215.4" y="20.8828">RBAC-2 约束模型</text><!--MD5=[e59cf999063292dce8d6ea34dd10a338]
+class user--><rect codeLine="62" fill="#FEFECE" filter="url(#f1ltbh81zjcmss)" height="65.1187" id="user" style="stroke:#A80036;stroke-width:1.7999999999999998;" width="93.6" x="8.4" y="243.8391"/><text fill="#000000" font-family="sans-serif" font-size="14.4" lengthAdjust="spacing" textLength="76.8" x="16.8" y="263.7609">&lt;&lt;用户&gt;&gt;</text><text fill="#000000" font-family="sans-serif" font-size="14.4" lengthAdjust="spacing" textLength="31.2" x="39.6" y="280.7203">User</text><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="9.6" x2="100.8" y1="289.7578" y2="289.7578"/><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="9.6" x2="100.8" y1="299.3578" y2="299.3578"/><!--MD5=[230c8b93044a8b32754c79e4598c3632]
+class role--><rect codeLine="65" fill="#FEFECE" filter="url(#f1ltbh81zjcmss)" height="65.1187" id="role" style="stroke:#A80036;stroke-width:1.7999999999999998;" width="93.6" x="199.2" y="243.8391"/><text fill="#000000" font-family="sans-serif" font-size="14.4" lengthAdjust="spacing" textLength="76.8" x="207.6" y="263.7609">&lt;&lt;角色&gt;&gt;</text><text fill="#000000" font-family="sans-serif" font-size="14.4" lengthAdjust="spacing" textLength="30" x="231" y="280.7203">Role</text><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="200.4" x2="291.6" y1="289.7578" y2="289.7578"/><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="200.4" x2="291.6" y1="299.3578" y2="299.3578"/><!--MD5=[709ccdcfb80c42dc7c8b224e49d659f0]
+class perm--><rect codeLine="68" fill="#FEFECE" filter="url(#f1ltbh81zjcmss)" height="96.2109" id="perm" style="stroke:#A80036;stroke-width:1.7999999999999998;" width="99.6" x="384.6" y="228.2391"/><text fill="#000000" font-family="sans-serif" font-size="14.4" lengthAdjust="spacing" textLength="76.8" x="396" y="248.1609">&lt;&lt;许可&gt;&gt;</text><text fill="#000000" font-family="sans-serif" font-size="14.4" lengthAdjust="spacing" textLength="74.4" x="397.2" y="265.1203">Permission</text><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="385.8" x2="483" y1="274.1578" y2="274.1578"/><ellipse cx="397.8" cy="287.3578" fill="#000000" rx="3.6" ry="3.6" style="stroke:#000000;stroke-width:1.2;"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="68.4" x="408.6" y="291.7195">«操作» ops</text><ellipse cx="397.8" cy="302.9039" fill="#000000" rx="3.6" ry="3.6" style="stroke:#000000;stroke-width:1.2;"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="68.4" x="408.6" y="307.2656">«对象» obs</text><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="385.8" x2="483" y1="314.85" y2="314.85"/><!--MD5=[d39b0e5acf37d349c49873ef54346d0c]
+class session--><rect codeLine="73" fill="#FEFECE" filter="url(#f1ltbh81zjcmss)" height="65.1187" id="session" style="stroke:#A80036;stroke-width:1.7999999999999998;" width="93.6" x="8.4" y="397.4391"/><text fill="#000000" font-family="sans-serif" font-size="14.4" lengthAdjust="spacing" textLength="76.8" x="16.8" y="417.3609">&lt;&lt;会话&gt;&gt;</text><text fill="#000000" font-family="sans-serif" font-size="14.4" lengthAdjust="spacing" textLength="50.4" x="30" y="434.3203">Session</text><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="9.6" x2="100.8" y1="443.3578" y2="443.3578"/><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="9.6" x2="100.8" y1="452.9578" y2="452.9578"/><!--MD5=[4da45f120b6b49903800f5dc5d31f72a]
+class ssd--><rect codeLine="76" fill="#70D4FF" filter="url(#f1ltbh81zjcmss)" height="65.1187" id="ssd" style="stroke:#A80036;stroke-width:1.7999999999999998;" width="151.2" x="74.4" y="61.4391"/><text fill="#000000" font-family="sans-serif" font-size="14.4" lengthAdjust="spacing" textLength="134.4" x="82.8" y="81.3609">&lt;&lt;静态职责分离&gt;&gt;</text><text fill="#000000" font-family="sans-serif" font-size="14.4" lengthAdjust="spacing" textLength="25.2" x="137.4" y="98.3203">SSD</text><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="75.6" x2="224.4" y1="107.3578" y2="107.3578"/><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="75.6" x2="224.4" y1="116.9578" y2="116.9578"/><!--MD5=[0d8b76dac838dafcd862ce2b139ded14]
+class dsd--><rect codeLine="79" fill="#FD953B" filter="url(#f1ltbh81zjcmss)" height="65.1187" id="dsd" style="stroke:#A80036;stroke-width:1.7999999999999998;" width="151.2" x="252" y="397.4391"/><text fill="#000000" font-family="sans-serif" font-size="14.4" lengthAdjust="spacing" textLength="134.4" x="260.4" y="417.3609">&lt;&lt;动态职责分离&gt;&gt;</text><text fill="#000000" font-family="sans-serif" font-size="14.4" lengthAdjust="spacing" textLength="28.8" x="313.2" y="434.3203">DSD</text><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="253.2" x2="402" y1="443.3578" y2="443.3578"/><line style="stroke:#A80036;stroke-width:1.7999999999999998;" x1="253.2" x2="402" y1="452.9578" y2="452.9578"/><path d="M267.6,32.6391 L267.6,89.0391 L225.912,93.8391 L267.6,98.6391 L267.6,154.875 A0,0 0 0 0 267.6,154.875 L591.6,154.875 A0,0 0 0 0 591.6,154.875 L591.6,44.6391 L579.6,32.6391 L267.6,32.6391 A0,0 0 0 0 267.6,32.6391 " fill="#FBFB77" filter="url(#f1ltbh81zjcmss)" style="stroke:#A80036;stroke-width:1.2;"/><path d="M579.6,32.6391 L579.6,44.6391 L591.6,44.6391 L579.6,32.6391 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.2;"/><text fill="#000000" font-family="sans-serif" font-size="15.6" lengthAdjust="spacing" textLength="294" x="274.8" y="53.7211">1. 互斥角色: 同一用户不能授予互斥角色，</text><text fill="#000000" font-family="sans-serif" font-size="15.6" lengthAdjust="spacing" textLength="187.2" x="294" y="72.0938">如：会计与审计角色互斥。</text><text fill="#000000" font-family="sans-serif" font-size="15.6" lengthAdjust="spacing" textLength="294" x="274.8" y="90.4664">2. 基数约束: 一个用户对于的角色数受限或</text><text fill="#000000" font-family="sans-serif" font-size="15.6" lengthAdjust="spacing" textLength="202.8" x="294" y="108.8391">一个角色对应的用户数受限。</text><text fill="#000000" font-family="sans-serif" font-size="15.6" lengthAdjust="spacing" textLength="298.8" x="274.8" y="127.2117">3. 先决条件约束: 用户想拥有 A 角色就必须</text><text fill="#000000" font-family="sans-serif" font-size="15.6" lengthAdjust="spacing" textLength="111.6" x="294" y="145.5844">先拥有 B 角色。</text><path d="M445.2,405.2391 L445.2,425.0391 L403.536,429.8391 L445.2,434.6391 L445.2,453.9844 A0,0 0 0 0 445.2,453.9844 L610.8,453.9844 A0,0 0 0 0 610.8,453.9844 L610.8,417.2391 L598.8,405.2391 L445.2,405.2391 A0,0 0 0 0 445.2,405.2391 " fill="#FBFB77" filter="url(#f1ltbh81zjcmss)" style="stroke:#A80036;stroke-width:1.2;"/><path d="M598.8,405.2391 L598.8,417.2391 L610.8,417.2391 L598.8,405.2391 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.2;"/><text fill="#000000" font-family="sans-serif" font-size="15.6" lengthAdjust="spacing" textLength="140.4" x="452.4" y="426.3211">用户登录系统后动态</text><text fill="#000000" font-family="sans-serif" font-size="15.6" lengthAdjust="spacing" textLength="109.2" x="452.4" y="444.6937">决定用户的角色</text><!--MD5=[46cf5a15e34552029c61a979633c4d65]
+link ssd to user--><path codeLine="95" d="M133.488,126.3951 C116.136,159.3351 89.016,210.8271 71.688,243.7431 " fill="none" id="ssd-user" style="stroke:#A80036;stroke-width:1.2;"/><!--MD5=[17d1c68772ecfeb86d7942328ed1cca6]
+link ssd to role--><path codeLine="96" d="M166.716,126.3951 C184.284,159.3351 211.752,210.8271 229.308,243.7431 " fill="none" id="ssd-role" style="stroke:#A80036;stroke-width:1.2;"/><!--MD5=[63ce33cd5e178a8d978ca2d524017a28]
+link user to role--><path codeLine="97" d="M112.308,276.2391 C136.644,276.2391 164.964,276.2391 189.252,276.2391 " fill="none" id="user-role" style="stroke:#A80036;stroke-width:1.2;"/><line style="stroke:#A80036;stroke-width:1.2;" x1="189.444" x2="199.044" y1="276.2391" y2="269.0391"/><line style="stroke:#A80036;stroke-width:1.2;" x1="189.444" x2="199.044" y1="276.2391" y2="283.4391"/><line style="stroke:#A80036;stroke-width:1.2;" x1="189.444" x2="199.044" y1="276.2391" y2="276.2391"/><ellipse cx="182.244" cy="276.2391" fill="none" rx="4.8" ry="4.8" style="stroke:#A80036;stroke-width:1.2;"/><line style="stroke:#A80036;stroke-width:1.2;" x1="111.96" x2="102.36" y1="276.2391" y2="283.4391"/><line style="stroke:#A80036;stroke-width:1.2;" x1="111.96" x2="102.36" y1="276.2391" y2="269.0391"/><line style="stroke:#A80036;stroke-width:1.2;" x1="111.96" x2="102.36" y1="276.2391" y2="276.2391"/><ellipse cx="119.16" cy="276.2391" fill="none" rx="4.8" ry="4.8" style="stroke:#A80036;stroke-width:1.2;"/><text fill="#000000" font-family="sans-serif" font-size="15.6" lengthAdjust="spacing" textLength="0" x="177" y="268.5211"/><!--MD5=[60667bb19b59ffe7ae023876456a29a0]
+link role to perm--><path codeLine="98" d="M302.76,276.2391 C325.488,276.2391 351.672,276.2391 374.676,276.2391 " fill="none" id="role-perm" style="stroke:#A80036;stroke-width:1.2;"/><line style="stroke:#A80036;stroke-width:1.2;" x1="374.724" x2="384.324" y1="276.2391" y2="269.0391"/><line style="stroke:#A80036;stroke-width:1.2;" x1="374.724" x2="384.324" y1="276.2391" y2="283.4391"/><line style="stroke:#A80036;stroke-width:1.2;" x1="374.724" x2="384.324" y1="276.2391" y2="276.2391"/><ellipse cx="367.524" cy="276.2391" fill="none" rx="4.8" ry="4.8" style="stroke:#A80036;stroke-width:1.2;"/><line style="stroke:#A80036;stroke-width:1.2;" x1="302.652" x2="293.052" y1="276.2391" y2="283.4391"/><line style="stroke:#A80036;stroke-width:1.2;" x1="302.652" x2="293.052" y1="276.2391" y2="269.0391"/><line style="stroke:#A80036;stroke-width:1.2;" x1="302.652" x2="293.052" y1="276.2391" y2="276.2391"/><ellipse cx="309.852" cy="276.2391" fill="none" rx="4.8" ry="4.8" style="stroke:#A80036;stroke-width:1.2;"/><text fill="#000000" font-family="sans-serif" font-size="15.6" lengthAdjust="spacing" textLength="0" x="362.7" y="268.5211"/><!--MD5=[ec20515c3853607e150173ab957f5f24]
+link user to session--><path codeLine="99" d="M55.2,317.3151 C55.2,339.4071 55.2,366.7911 55.2,388.8591 " fill="none" id="user-session" style="stroke:#A80036;stroke-width:1.2;"/><line style="stroke:#A80036;stroke-width:1.2;" x1="60" x2="50.4" y1="392.5551" y2="392.5551"/><line style="stroke:#A80036;stroke-width:1.2;" x1="60" x2="50.4" y1="388.9551" y2="388.9551"/><line style="stroke:#A80036;stroke-width:1.2;" x1="55.2" x2="55.2" y1="387.7551" y2="397.3551"/><line style="stroke:#A80036;stroke-width:1.2;" x1="50.4" x2="60" y1="313.5711" y2="313.5711"/><line style="stroke:#A80036;stroke-width:1.2;" x1="50.4" x2="60" y1="317.1711" y2="317.1711"/><line style="stroke:#A80036;stroke-width:1.2;" x1="55.2" x2="55.2" y1="318.3711" y2="308.7711"/><!--MD5=[e1a84f08c3dbde357715ac13ae2d8df4]
+link role to session--><path codeLine="100" d="M198.552,315.0351 C169.188,338.3031 131.64,368.0631 102.336,391.2951 " fill="none" id="role-session" style="stroke:#A80036;stroke-width:1.2;"/><line style="stroke:#A80036;stroke-width:1.2;" x1="101.4233" x2="95.4597" y1="398.1348" y2="390.6118"/><line style="stroke:#A80036;stroke-width:1.2;" x1="104.2444" x2="98.2809" y1="395.8984" y2="388.3754"/><line style="stroke:#A80036;stroke-width:1.2;" x1="102.203" x2="94.68" y1="391.3915" y2="397.3551"/><line style="stroke:#A80036;stroke-width:1.2;" x1="198.9406" x2="200.519" y1="314.7241" y2="308.7711"/><line style="stroke:#A80036;stroke-width:1.2;" x1="198.9406" x2="212.425" y1="314.7241" y2="308.7711"/><line style="stroke:#A80036;stroke-width:1.2;" x1="198.9406" x2="206.472" y1="314.7241" y2="308.7711"/><!--MD5=[7dde2df82b5b1c687d0eb63cf4cd50ea]
+link role to dsd--><path codeLine="101" d="M262.908,308.7711 C276.912,334.7151 296.712,371.4111 310.716,397.3551 " fill="none" id="role-dsd" style="stroke:#A80036;stroke-width:1.2;"/><!--MD5=[c8bd7489781de86dc951a3e590541577]
+link session to dsd--><path codeLine="102" d="M102.024,429.8391 C143.1,429.8391 203.58,429.8391 251.58,429.8391 " fill="none" id="session-dsd" style="stroke:#A80036;stroke-width:1.2;"/><text fill="#000000" font-family="sans-serif" font-size="15.6" lengthAdjust="spacing" textLength="0" x="229.8" y="422.1211"/><!--MD5=[d0f50fa0df81b26560c751c1f052d809]
+@startuml
+title RBAC-0 基础模型
+'隐藏Entity标识
+hide circle
+
+'entity user <<泛型>>
+entity "<<用户>>\nUser" as user {
+}
+
+entity " <<角色>> \nRole" as role {
+}
+
+entity " <<许可>> \nPermission" as perm {
+  *<<操作>> ops
+  *<<对象>> obs
+}
+
+entity " <<会话>> \nSession" as session {
+}
+
+user }o-right-o{role:"      "
+role }o-right-o{perm:"     "
+user ||- -|| session
+role }- -|| session
+
+newpage
+
+title RBAC-1 分层模型
+hide circle
+'skinparam linetype ortho
+entity " <<用户>> \nUser" as user {
+}
+
+entity " <<角色>> \nRole" as role {
+}
+
+entity " <<许可>> \nPermission" as perm {
+* <<操作>> ops
+* <<对象>> obs
+}
+
+entity " <<会话>> \nSession" as session {
+}
+
+user }o-right-o{role:"      "
+role }o-right-o{perm:"     "
+user ||- -|| session
+role }- -|| session
+role ||- -o role
+note bottom of role
+在RBAC0模型之上引入了 **继承关系**，形
+成了**角色分层模型**，继承分为**一般继承**
+和**受限继承**
+end note
+
+newpage
+
+title RBAC-2 约束模型
+'隐藏Entity标识
+hide circle
+
+'entity user <<泛型>>
+entity " <<用户>> \nUser" as user {
+}
+
+entity " <<角色>> \nRole" as role {
+}
+
+entity " <<许可>> \nPermission" as perm {
+  *<<操作>> ops
+  *<<对象>> obs
+}
+
+entity " <<会话>> \nSession" as session {
+}
+
+entity " <<静态职责分离>> \nSSD" as ssd #70d4ff {
+}
+
+entity " <<动态职责分离>> \nDSD" as dsd #fd953b {
+}
+
+note right of ssd
+1. 互斥角色: 同一用户不能授予互斥角色，
+    如：会计与审计角色互斥。
+2. 基数约束: 一个用户对于的角色数受限或
+    一个角色对应的用户数受限。
+3. 先决条件约束: 用户想拥有 A 角色就必须
+    先拥有 B 角色。
+end note
+note right of dsd
+用户登录系统后动态
+决定用户的角色
+end note
+
+ssd - - user
+ssd - - role
+user }o-right-o{role:"           "
+role }o-right-o{perm:"          "
+user ||- -|| session
+role }- -|| session
+dsd -up- role
+dsd -left- session:"                      "
+
+
+newpage
+
+title RBAC-3 组合模型
+'隐藏Entity标识
+hide circle
+
+'entity user <<泛型>>
+entity " <<用户>> \nUser" as user {
+}
+
+entity " <<角色>> \nRole" as role {
+}
+
+entity " <<许可>> \nPermission" as perm {
+  *<<操作>> ops
+  *<<对象>> obs
+}
+
+entity " <<会话>> \nSession" as session {
+}
+
+entity " <<静态职责分离>> \nSSD" as ssd #70d4ff {
+}
+
+entity " <<动态职责分离>> \nDSD" as dsd #fd953b {
+}
+
+ssd - - user
+ssd - - role
+user }o-right-o{role:"           "
+role }o-right-o{perm:"          "
+user ||- -|| session
+role }- -|| session
+role ||- -o role
+dsd -up- role
+dsd -left- session:"                      "
+@enduml
+
+@startuml
+title RBAC-0 基础模型
+hide circle
+
+entity "<<用户>>\nUser" as user {
+}
+
+entity " <<角色>> \nRole" as role {
+}
+
+entity " <<许可>> \nPermission" as perm {
+  *<<操作>> ops
+  *<<对象>> obs
+}
+
+entity " <<会话>> \nSession" as session {
+}
+
+user }o-right-o{role:"      "
+role }o-right-o{perm:"     "
+user ||- -|| session
+role }- -|| session
+
+newpage
+
+title RBAC-1 分层模型
+hide circle
+entity " <<用户>> \nUser" as user {
+}
+
+entity " <<角色>> \nRole" as role {
+}
+
+entity " <<许可>> \nPermission" as perm {
+* <<操作>> ops
+* <<对象>> obs
+}
+
+entity " <<会话>> \nSession" as session {
+}
+
+user }o-right-o{role:"      "
+role }o-right-o{perm:"     "
+user ||- -|| session
+role }- -|| session
+role ||- -o role
+note bottom of role
+在RBAC0模型之上引入了 **继承关系**，形
+成了**角色分层模型**，继承分为**一般继承**
+和**受限继承**
+end note
+
+newpage
+
+title RBAC-2 约束模型
+hide circle
+
+entity " <<用户>> \nUser" as user {
+}
+
+entity " <<角色>> \nRole" as role {
+}
+
+entity " <<许可>> \nPermission" as perm {
+  *<<操作>> ops
+  *<<对象>> obs
+}
+
+entity " <<会话>> \nSession" as session {
+}
+
+entity " <<静态职责分离>> \nSSD" as ssd #70d4ff {
+}
+
+entity " <<动态职责分离>> \nDSD" as dsd #fd953b {
+}
+
+note right of ssd
+1. 互斥角色: 同一用户不能授予互斥角色，
+    如：会计与审计角色互斥。
+2. 基数约束: 一个用户对于的角色数受限或
+    一个角色对应的用户数受限。
+3. 先决条件约束: 用户想拥有 A 角色就必须
+    先拥有 B 角色。
+end note
+note right of dsd
+用户登录系统后动态
+决定用户的角色
+end note
+
+ssd - - user
+ssd - - role
+user }o-right-o{role:"           "
+role }o-right-o{perm:"          "
+user ||- -|| session
+role }- -|| session
+dsd -up- role
+dsd -left- session:"                      "
+
+
+newpage
+
+title RBAC-3 组合模型
+hide circle
+
+entity " <<用户>> \nUser" as user {
+}
+
+entity " <<角色>> \nRole" as role {
+}
+
+entity " <<许可>> \nPermission" as perm {
+  *<<操作>> ops
+  *<<对象>> obs
+}
+
+entity " <<会话>> \nSession" as session {
+}
+
+entity " <<静态职责分离>> \nSSD" as ssd #70d4ff {
+}
+
+entity " <<动态职责分离>> \nDSD" as dsd #fd953b {
+}
+
+ssd - - user
+ssd - - role
+user }o-right-o{role:"           "
+role }o-right-o{perm:"          "
+user ||- -|| session
+role }- -|| session
+role ||- -o role
+dsd -up- role
+dsd -left- session:"                      "
+@enduml
+
+PlantUML version 1.2022.1(Wed Feb 02 02:19:58 CST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: zh
+Country: CN
+--></g></svg>

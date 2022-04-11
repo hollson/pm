@@ -1,0 +1,49 @@
+@startuml
+title 使用方括号([])表示的线颜色
+class foo类
+class bar类
+bar类1 : [#red]
+bar类2 : [#green]
+bar类3 : [#blue]
+
+foo类 --> bar类
+foo类 -[#red]-> bar类1     : [#red]
+foo类 -[#green]-> bar类2   : [#green]
+foo类 -[#blue]-> bar类3    : [#blue]
+'foo类 -[#blue;#yellow;#green]-> bar类4
+
+
+newpage
+class foo类
+foo类 --> bar类 : 默认
+foo类 --> bar类1 #line:red;line.bold;text:red  : 红色粗线
+foo类 --> bar类2 #green;line.dashed;text:green : 绿色断线
+foo类 --> bar类3 #blue;line.dotted;text:blue   : 蓝色点线
+
+newpage
+
+abstract   抽象类
+annotation 注解     #pink ##[bold]red
+class      类      #palegreen ##[dashed]green
+interface  接口    #aliceblue ##[dotted]blue
+newpage
+
+abstract   抽象类
+annotation 注解     #pink;line:red;line.bold;text:red
+class      类      #palegreen;line:green;line.dashed;text:green
+interface  接口    #aliceblue;line:blue;line.dotted;text:blue
+
+newpage
+title 渐变色
+class bar类 #line:green;back:lightblue
+class bar类2 #lightblue;line:green
+
+class Foo类1 #back:red;line:00FFFF
+class Foo类Dashed #line.dashed:blue
+class Foo类Dotted #line.dotted:blue
+class Foo类Bold #line.bold
+class Demo类1 #back:lightgreen|yellow;header:blue/red
+
+
+
+@enduml

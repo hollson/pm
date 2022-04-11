@@ -1,0 +1,26 @@
+@startuml
+title 时序图参与者示例
+header 这是页眉
+footer 页脚-第%page%/%lastpage%页
+
+participant 参与者     as Foo  #yellow
+actor       角色       as Foo1 #blue
+boundary    边界       as Foo2 order 1
+control     控制       as Foo3
+entity      实体       as Foo4
+database    数据库     as Foo5
+collections 集合       as Foo6  #99FF99
+queue       队列       as Foo7
+
+Foo -> Foo1 : 指向 actor
+Foo -> Foo2 : 指向 boundary
+note right:   可调整参与者顺序\n默认为0，权重越\n大越靠后
+Foo -> Foo3 : 指向 control
+Foo -> Foo4 : 指向 entity
+Foo -> Foo5 : 指向 database
+Foo -> Foo6 : 指向 collections
+note right
+   可以改变颜色哦
+end note
+Foo -> Foo7:  指向 queue
+@enduml

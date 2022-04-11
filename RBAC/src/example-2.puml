@@ -1,0 +1,134 @@
+@startuml
+
+title RBAC-权限管理(扩展)模型图
+'hide circle
+
+entity "**用户表**" as user {
+  *用户ID  <PK>
+  用户名
+}
+
+entity "**角色表**" as role {
+  *角色ID  <PK>
+  角色名
+}
+
+entity "**权限表**" as perm {
+  *权限ID  <PK>
+  权限类型
+}
+
+entity "菜单表" as menu #fede35 {
+  *菜单ID  <PK>
+  菜单名称
+  菜单URL
+  父菜单ID
+}
+
+entity "页面元素表" as element #fede35 {
+  *元素ID  <PK>
+  元素编码
+}
+
+entity "文件操作表" as files #fede35 {
+  *文件ID  <PK>
+  文件名
+  文件路径
+}
+
+entity "功能操作表" as ops #fede35 {
+  *操作ID  <PK>
+  操作名称
+  操作编码
+  拦截URL前缀
+  父操作ID
+}
+
+entity "用户组表" as group #fede35 {
+  *用户组ID  <PK>
+  用户组名
+}
+
+
+entity "用户组角色关联表" as group_role #99FF99 {
+  *用户组ID <FK>
+  *角色ID <FK>
+}
+
+entity "用户组用户关联表" as group_user #99FF99 {
+  *用户组ID <FK>
+  *用户ID <FK>
+}
+
+entity "用户角色关联表" as user_role #99FF99 {
+  *用户ID <FK>
+  *角色ID <FK>
+}
+
+entity "角色权限关联表" as role_perm #99FF99 {
+  *角色ID <FK>
+  *权限ID <FK>
+}
+
+entity "<<访问控制表>>" as access_contrl #70d4ff {
+}
+
+note right of access_contrl
+包括用户特殊权限表，
+条件约束表，互斥关系
+字典表等，可根据业务
+需要进行扩展。
+end note
+
+
+
+entity "菜单权限关联表" as menu_perm #99FF99 {
+  *权限ID <FK>
+  *菜单ID <FK>
+}
+
+entity "文件权限关联表" as file_perm #99FF99 {
+  *权限ID <FK>
+  *文件ID <FK>
+}
+
+entity "功能权限关联表" as ops_perm #99FF99 {
+  *权限ID <FK>
+  *操作ID <FK>
+}
+
+entity "元素权限关联表" as element_perm #99FF99 {
+  *权限ID <FK>
+  *元素ID <FK>
+}
+
+role_perm -up-> role
+role_perm -up-> perm
+user_role -up-> user
+user_role -up-> role
+
+access_contrl -left-> user
+access_contrl -left-> perm
+access_contrl -left-> role
+
+'=============================
+
+menu_perm -down-> perm
+menu_perm -up-> menu
+
+ops_perm -down-> perm
+ops_perm -up-> ops
+
+element_perm -up-> perm
+element_perm -down-> element
+
+file_perm -up-> perm
+file_perm -down-> files
+
+
+group_user --> user
+group_user -up-> group
+
+group_role --> role
+group_role -up->group
+@enduml

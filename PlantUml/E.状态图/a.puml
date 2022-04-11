@@ -1,0 +1,33 @@
+@startuml
+' 简单状态
+'hide empty description
+'[*] --> 状态1
+'状态1 --> [*]
+'状态1 : 你好吗
+'状态1 : 我很好呀
+'
+'状态1 -> 状态2
+'状态2 --> [*]
+'
+'newpage
+
+scale 350 width
+[*] --> NotShooting
+
+state NotShooting {
+  [*] --> Idle
+  Idle --> Configuring : EvConfig
+  Configuring --> Idle : EvConfig
+}
+
+state Configuring {
+  [*] --> NewValueSelection
+  NewValueSelection --> NewValuePreview : EvNewValue
+  NewValuePreview --> NewValueSelection : EvNewValueRejected
+  NewValuePreview --> NewValueSelection : EvNewValueSaved
+
+  state NewValuePreview {
+     State1 -> State2
+  }
+}
+@enduml
