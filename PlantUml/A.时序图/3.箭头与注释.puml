@@ -1,0 +1,46 @@
+@startuml
+title 箭头与注释
+==箭头与样式==
+skinparam responseMessageBelowArrow true
+Bob -[#red]> Alice:请求
+
+Bob <-[#0000FF]- Alice:响应
+note left
+* 响应消息置底
+* 修改箭头颜色
+* 三竖线增加空行
+* 注释加入[[http://bac.com/start{Tooltip 点击这里} 超链接]]
+end note
+
+|||
+
+Bob ->x Alice:不可达
+Bob ->> Alice
+note right: 细箭头
+
+Bob -\ Alice
+Bob \\- Alice
+Bob //-- Alice
+Bob o\\-- Alice
+note right:  单面箭头
+
+Bob ->o Alice
+Bob <-> Alice:双向箭头
+Bob <->o Alice
+note right: 双向箭头
+Bob -> Bob : 指向自己
+
+==注释与样式==
+note over Bob #aqua: 注释置于生命线上
+
+note over Alice, Bob #FFAAAA: 跨生命线注释
+
+note over Bob, Alice
+跨生命线多行注释
+跨生命线多行注释
+跨生命线多行注释
+end note
+
+note over Bob : 跨生命线对齐A
+/ note over Alice : 跨生命线对齐B
+@enduml

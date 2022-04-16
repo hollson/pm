@@ -1,0 +1,24 @@
+@startuml
+title 生命线
+participant "客户端" as Client
+
+box "内部服务" #LightBlue
+  participant "服务端" as  Server
+  participant "计时器" as Timer
+end box
+
+Client -> Server: 请求
+activate Server #FFBBBB
+  Server -> Server: 内部计算
+    activate Server #DarkSalmon
+    Server -> Timer: Stop命令
+      activate Timer
+        Timer --> Server:完成
+      destroy Timer
+      note right:生命线终结
+    deactivate Server
+  Server -> Client: 完成
+deactivate Server
+
+
+@enduml

@@ -1,0 +1,18 @@
+@startuml
+
+interface "总线接口" as iface
+node "管理节点" as node1 #pink;line:red;line.bold;text:black
+node "节点A" as node2
+node "节点B" as node3
+node "节点C" as node4
+node node5
+cloud "亚马逊云" as aws
+
+node1 -- node2 : 实线
+node1 .. node3 : 虚线
+node1 ~~ node4 : 细虚线
+node1 =[#blue]= node5: 加粗
+node1 -(0)- aws: 云服务
+iface --> node1 #line:red;line.bold;text:red  : 红色加粗
+
+@enduml

@@ -1,0 +1,22 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+title 引用
+participant "服务A" as app01
+participant "服务B" as app02
+
+ref over app01, app02 : 初始化
+app01 -> app02 : 通知
+ref over app02
+内部处理
+end ref
+
+newpage 延迟
+actor app02
+app01 -> app02: 认证请求
+...
+app02 --> app01: 认证响应
+...5分钟后...
+app02 --> app01: 再见
+
+@enduml

@@ -1,0 +1,78 @@
+@startuml
+'https://plantuml.com/deployment-diagram
+title 声明元素
+header 部署图
+
+person 人物 #aliceblue;line:blue;line.dotted;text:blue
+agent 代理服务
+artifact 手工艺品 #palegreen;line:green;line.dashed;text:green
+boundary 边界
+card 卡片
+circle 圆圈
+cloud 云服务
+collections 集合
+component 业务组件
+control 控制器
+database 数据库
+entity 实体
+file 文件
+folder 文件目录 #pink;line:red;line.bold;text:red
+frame 框架
+interface 接口
+label 标签
+node 节点 #aliceblue;line:blue;line.dotted;text:blue
+package 包
+queue 消息队列
+rectangle 矩形
+hexagon 六边形
+stack 内存堆
+storage 贮存器
+actor 系统角色
+actor/ "业务角色"
+usecase 系统用例
+usecase/ "业务用例"
+
+newpage
+
+title 元素描述
+
+folder folder [
+    这是个 <b>文件夹
+    ----
+    您可以使用
+    ====
+    不同类型
+    ....
+    的分隔符
+]
+
+node node [
+    这是个 <b>结点
+    ----
+    您可以使用
+    ====
+    不同类型
+    ....
+    的分隔符
+]
+
+database database #gold;line:green;line.dashed;text:blue [
+    这是个 <b>数据库
+    ----
+    您可以使用
+    ====
+    不同类型
+    ....
+    的分隔符
+]
+
+usecase usecase [
+    这是个 <b>用例
+    ----
+    您可以使用
+    ====
+    不同类型
+    ....
+    的分隔符
+]
+@enduml

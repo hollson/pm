@@ -1,0 +1,56 @@
+
+@startuml
+header 用例图
+title 布局-默认(垂直)
+
+actor 管理员 as admin
+(创建商品) as op1
+(修改商品) as op2
+'(查询商品) as op3
+(删除商品) as op4
+
+package 查询 as op3{
+  (单条查询) as one
+  (分页查询) as list
+}
+
+admin -up-> op1
+admin -right-> op2
+admin -down-> one
+admin -down-> list
+admin -left-> op4
+
+newpage
+
+title 布局-水平
+left to right direction
+actor 管理员 as admin
+(创建商品) as op1
+(修改商品) as op2
+'(查询商品) as op3
+(删除商品) as op4
+
+package 查询 as op3{
+  (单条查询) as one
+  (分页查询) as list
+}
+
+admin -up-> op1
+admin -right-> op2
+admin -down-> one
+admin -down-> list
+admin -left-> op4
+
+newpage
+
+title:销售示例
+left to right direction
+actor 顾客
+actor 售货员
+package 结账台 {
+  顾客 -- (结账台)
+  (结账台) .> (支付) : include
+  (帮助) .> (结账台) : extends
+  (结账台) -- 售货员
+}
+@enduml

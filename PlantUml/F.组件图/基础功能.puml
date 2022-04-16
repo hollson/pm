@@ -1,0 +1,44 @@
+@startuml
+title 基础语法
+
+component [组件A]  as Comp1 #gold
+[组件B] as Comp2
+
+interface "接口A" as Inter1
+() "接口B" as Inter2
+
+newpage
+title 组件示例
+访问数据 - [应用组件]
+[应用组件] .down.> 浏览器 : 展示
+
+note right of [应用组件]
+业务服务
+end note
+note left of 浏览器:H5渲染
+
+newpage
+
+title 自定义样式
+
+skinparam component {
+  backgroundColor<<static_lib>> DarkKhaki
+  backgroundColor<<shared_lib>> Green
+}
+
+skinparam node {
+  borderColor Green
+  backgroundColor Yellow
+  backgroundColor<<shared_node>> Magenta
+}
+skinparam databaseBackgroundColor Aqua
+
+[组件A] <<static_lib>>
+[组件B] <<shared_lib>>
+[组件C] <<static_lib>>
+
+node 结点A
+node 结点B <<shared node>>
+database Mysql数据库
+
+@enduml

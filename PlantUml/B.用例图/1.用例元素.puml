@@ -5,6 +5,7 @@ header:用例图
 (用例2) as UC2
 usecase 用例3
 usecase (用例4) as UC4
+(用例5) as (Use) << 构造类型 >>
 
 newpage
 title:业务用例
@@ -58,7 +59,14 @@ skinparam actorStyle matchstick
 "管理员“ as Admin
 Admin --> (管理XX系统)
 
+newpage
+title 用例继承
 
+:Main Admin: as Admin
+(Use the application) as (Use)
+
+User <|-- Admin:角色继承
+(Start) <|-- (Use):用例继承
 
 newpage
 title:用例描述
@@ -74,7 +82,7 @@ usecase UC1 as "1. 使用换行
 __
 5. 使用下划线来分割
 "
-UC1 --\\ ddd
+UC1 --\\ 用户
 
 newpage
 title:使用包

@@ -1,0 +1,18 @@
+
+@startuml
+'https://plantuml.com/sequence-diagram
+
+title 创建参与者
+客户端 -> 服务端 : 请求
+
+create 子服务
+服务端 -> 子服务 : 创建
+
+create control 控制器
+服务端 -> 控制器
+note right : 这是控制器
+
+服务端 --> 客户端 : 响应
+
+@enduml
+

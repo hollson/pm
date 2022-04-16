@@ -1,0 +1,23 @@
+@startuml
+title 消息编号
+autonumber 1 1
+
+Client -> Server:同步请求
+note left:消息自动编号
+Client <-- Server:响应
+
+|||
+
+autonumber stop
+Client -> Server:异步请求(无需返回)
+note right : 自动停止编号
+
+|||
+
+autonumber resume 1 "<font color=blue><b>Msg[0]  "
+Client -> Server : 请求消息
+note left : * 恢复自动编号\n*设置消息样式
+Client <- Server : 响应消息
+
+
+@enduml

@@ -1,0 +1,55 @@
+@startuml
+alt 状态码=200
+  loop 1000次
+    Client -> Server: QPS请求
+  end
+else 状态码 <> 200
+  Client -> Client:程序退出
+end
+note right : * **条件**
+
+|||
+
+group Group1 [自定义标签]
+  loop 1000次
+    Client -> Server: DNS攻击
+    Client <-- Server:返回
+  end
+  Client --> Client
+end
+note right : * **循环**
+
+|||
+
+opt Option
+  Client -> Server:可能发生的消息
+end
+note right : * **选择**
+
+|||
+
+break 中断
+  Client -> Server:如果执行此片段，则放弃序列的其余部分
+end
+note right : * **中断**
+
+|||
+
+par 片段内事件可交替执行
+  Client -> Server:并行消息A
+  Client -> Server:并行消息B
+  critical 关键，即不可交替执行
+    Client -> Server:同步消息
+    Client <-- Server:返回
+  end
+end
+note right : * **并行**
+
+@enduml
+
+
+
+
+
+
+

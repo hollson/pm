@@ -1,0 +1,40 @@
+@startuml
+
+skinparam databaseBackgroundColor Aqua
+
+skinparam node {
+  borderColor Green
+  backgroundColor Yellow
+  backgroundColor<<shared_node>> Magenta
+}
+
+package "业务组件" {
+  HTTP - [文件处理程序]
+  [数据服务组件]
+}
+
+node "Aws文件服务" {
+  FTP - [文件服务组件]
+  [文件处理程序] --> FTP
+}
+
+cloud {
+  [云服务组件]
+}
+
+
+database "MySql" {
+  folder "数据目录" {
+    [数据服务]
+  }
+  frame "索引框架" {
+    [索引服务]
+  }
+}
+
+
+[数据服务组件] --> [云服务组件]
+[云服务组件] --> [数据服务]
+[数据服务] --> [索引服务]
+
+@enduml

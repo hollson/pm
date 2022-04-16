@@ -1,0 +1,28 @@
+@startuml
+title 构造类型
+'构造类型  用 << 和 >> 来定义角色或者用例的构造类型。
+
+skinparam handwritten true
+skinparam usecase {
+    BackgroundColor DarkSeaGreen
+    BorderColor DarkSlateGray
+    BackgroundColor<< Main >> YellowGreen
+    BorderColor<< Main >> YellowGreen
+    ArrowColor Olive
+    ActorBorderColor black
+    ActorFontName Courier
+    ActorBackgroundColor << Human >> Gold
+}
+
+User << Human >>
+:Main Database: as MySql << Application >>
+(Start) <<One Shot>>
+(使用应用程序) as (Use) << Main >>
+
+User -> (Start)
+User --> (Use)
+MySql --> (Use)
+
+
+
+@enduml

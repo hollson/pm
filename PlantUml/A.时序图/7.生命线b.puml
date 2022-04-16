@@ -1,0 +1,27 @@
+@startuml
+title 快捷语法
+==新语法==
+
+alice -> bob ++ : 请求
+  note right
+    ++ 激活目标
+    -- 撤销激活源
+     ** 创建目标实例
+    !! 摧毁目标实例
+  end note
+    bob -> bob ++ : 调用自己
+    bob -> charlie ++  #005500 : 你好
+    bob -> george ** : 创建
+    return 完成
+  return 完成
+  bob -> george !! : 删除
+return 响应
+
+==同时激活/撤销==
+
+alice -> bob++: 请求
+bob -> charlie --++ #gold: 下一步
+charlie --> alice--: 完成
+
+@enduml
+

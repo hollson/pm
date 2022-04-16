@@ -1,0 +1,167 @@
+@startuml
+
+title 自定义样式
+
+<style>
+    actor {
+      BackGroundColor #green
+      LineThickness 1
+      LineColor black
+    }
+    agent {
+      BackGroundColor #f80c12
+      LineThickness 1
+      LineColor black
+    }
+    artifact {
+      BackGroundColor #a536dd
+      LineThickness 1
+      LineColor black
+    }
+    boundary {
+      BackGroundColor #ee1100
+      LineThickness 1
+      LineColor black
+    }
+    card {
+      BackGroundColor #6fbad4
+      LineThickness 1
+      LineColor black
+    }
+    circle {
+      BackGroundColor #ff3311
+      LineThickness 1
+      LineColor black
+    }
+    cloud {
+      BackGroundColor #ff4422
+      LineThickness 1
+      LineColor black
+    }
+    collections {
+      BackGroundColor #2046f8
+      LineThickness 1
+      LineColor black
+    }
+    component {
+      BackGroundColor #ff6644
+      LineThickness 1
+      LineColor black
+    }
+    control {
+      BackGroundColor #ff6644
+      LineThickness 1
+      LineColor black
+    }
+    database {
+      BackGroundColor #ff9933
+      LineThickness 1
+      LineColor black
+    }
+    entity {
+      BackGroundColor #feae2d
+      LineThickness 1
+      LineColor black
+    }
+    file {
+      BackGroundColor #feae2d
+      LineThickness 1
+      LineColor black
+    }
+    folder {
+      BackGroundColor #ccbb33
+      LineThickness 1
+      LineColor black
+    }
+    frame {
+      BackGroundColor #d0c310
+      LineThickness 1
+      LineColor black
+    }
+    hexagon {
+      BackGroundColor #aacc22
+      LineThickness 1
+      LineColor black
+    }
+    interface {
+      BackGroundColor #69d025
+      LineThickness 1
+      LineColor black
+    }
+    label {
+      BackGroundColor black
+      LineThickness 1
+      LineColor black
+    }
+    node {
+      BackGroundColor #dae9ec
+      LineThickness 1
+      LineColor black
+    }
+    package {
+      BackGroundColor #22ccaa
+      LineThickness 1
+      LineColor black
+    }
+    person {
+      BackGroundColor #11aabb
+      LineThickness 1
+      LineColor black
+    }
+    queue {
+      BackGroundColor #11aabb
+      LineThickness 1
+      LineColor black
+    }
+    rectangle {
+      BackGroundColor #1edd5a
+      LineThickness 1
+      LineColor black
+    }
+    stack {
+      BackGroundColor #6687fd
+      LineThickness 1
+      LineColor black
+    }
+    storage {
+      BackGroundColor #f06292
+      LineThickness 1
+      LineColor black
+    }
+    usecase {
+      BackGroundColor #288eec
+      LineThickness 1
+      LineColor black
+    }
+</style>
+
+person 人物
+agent 代理服务
+artifact 手工艺品
+boundary 边界
+card 卡片
+circle 圆圈
+cloud 云服务
+collections 集合
+component 业务组件
+control 控制器
+database 数据库
+entity 实体
+file 文件
+folder 文件目录
+frame 框架
+interface 接口
+label 标签
+node 节点
+package 包
+queue 消息队列
+rectangle 矩形
+hexagon 六边形
+stack 内存堆
+storage 贮存器
+actor 系统角色
+actor/ "业务角色"
+usecase 系统用例
+usecase/ "业务用例"
+
+@enduml

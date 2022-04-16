@@ -1,0 +1,40 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+newpage
+header:组件图
+title XXX示例
+'left to right direction
+queue "    NSQ\n消息队列" as nsq
+actor "策略管理" as admin
+
+'[uim服务] as uim
+database Redis {
+}
+package 策略服务 as server{
+   usecase 策略同步 as sync
+   admin -- sync
+   [策略计算] as cal
+   [读取策略] as reader
+   cal --> Redis:保存策略
+   reader  --> Redis:查询策略
+}
+
+node "Job服务" as job{
+   [任务处理器] as jobHandler
+}
+
+node "ClientApi" as api{
+}
+
+package "客户端" as cli{
+   [UDCP客户端] as subs
+}
+
+'sync -up-> uim:查询同步策略
+sync --> jobHandler:创建策略任务
+
+jobHandler -down-> nsq:推送
+api -up-> nsq:消费
+subs <-up- api:ws
+subs -up-> reader:https
+@enduml
