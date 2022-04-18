@@ -23,6 +23,4 @@ User -> (Start)
 User --> (Use)
 MySql --> (Use)
 
-
-
 @enduml

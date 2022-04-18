@@ -1,0 +1,50 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+title 「关联」关系
+:用户: -right-> (登录):**关联**
+
+newpage
+title 「泛化」关系
+
+用户 <|-- 管理员:角色泛化/继承
+
+actor 领导 as leader
+usecase "OA审批" as audit
+usecase "请假审批" as leave_audit
+usecase "报销审批" as reimbursement_audit
+
+leader -right-> audit
+audit <|-- leave_audit: **泛化**
+audit <|-- reimbursement_audit: **泛化**
+
+
+newpage
+title 「扩展」关系
+left to right direction
+
+'actor "学生" as student
+usecase "查询成绩" as query
+usecase "导出成绩" as export
+usecase "打印成绩" as print
+
+'student -right-> query
+query <-- export:<<extends>>
+query <-- print:<<extends>>
+'note as sss
+'在特定条件出现时，
+'才会被执行的用例。
+'end note
+
+newpage
+title 「包含」关系
+left to right direction
+usecase "账号登录" as login
+login --> (输入账号):<<include>>
+login --> (输入密码):<<include>>
+login --> (输确认登录):<<include>>
+'note as sss
+'包含关系
+'end note
+
+@enduml

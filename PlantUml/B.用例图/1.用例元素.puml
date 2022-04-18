@@ -1,19 +1,49 @@
 @startuml
+newpage
+
 title:系统用例
-header:用例图
-(用例1)
-(用例2) as UC2
-usecase 用例3
-usecase (用例4) as UC4
-(用例5) as (Use) << 构造类型 >>
+
+:参与者1: as act1
+skinparam actorStyle awesome
+actor "参与者2" as act2
+skinparam actorStyle hollow
+actor "参与者3" as act3
+skinparam actorStyle matches
+actor "参与者4" as act4
+
+(用例1) as uc1
+usecase (用例1) as uc1
+usecase (用例1) as uc2
+(用例3) as uc3 << 构造类型 >>
+
+usecase ucd as "
+**用例描述**
+
+1. 使用换行
+来分割描述用例
+--
+2. 使用双横线（减号）分割
+==
+3. 使用双等号来分割
+..虚线..
+4.使用虚线（双点）来分割
+__
+5. 使用下划线来分割
+"
+
+act1 --> uc1:**用例关系**
+act2 --> uc2
+act3 --> uc3
+act4 --> ucd
+
 
 newpage
+
 title:业务用例
-header:用例图
-(第一个用例)/
-(第二个用例)/ as (UC2)
-usecase/ UC3
-usecase/ (第四个\n用例) as UC4
+'left to right direction
+actor/ "业务用户" as user
+usecase/ (业务用例) as uc
+user --> uc
 
 note as xxx
 * 业务用例：业务用例体现了需求，比如论坛
@@ -29,79 +59,20 @@ end note
 
 newpage
 
-title:系统角色
-header:用例图
-' 火柴人：默认
-' 用户头像样式：skinparam actorStyle awesome
-' 透明人样式：skinparam actorStyle hollow
-:角色1:
-:角色2: as act2
-actor 角色3
-skinparam actorStyle awesome
-actor :角色4: as act4
-skinparam actorStyle hollow
-"角色5" as act5
-'用例的主体是事件流，事件流分为基本流和备选流
+title 项目示例
 
-newpage
-title:业务角色
-:第一个参与者:/
-:第二个\n参与者\n:/ as Man2
-actor/ Actor3
-actor/ :第四个参与者: as Person1
+left to right direction
+actor "学生" as student
+actor "老师" as teacher
 
-newpage
-title:用例关系
-header:用例图
-skinparam actorStyle matchstick
-:用户: --> (Use)
-"使用XX系统" as (Use)
-"管理员“ as Admin
-Admin --> (管理XX系统)
+usecase "修改成绩" as mod
+usecase "查询成绩" as query
+usecase "登录系统" as login
 
-newpage
-title 用例继承
-
-:Main Admin: as Admin
-(Use the application) as (Use)
-
-User <|-- Admin:角色继承
-(Start) <|-- (Use):用例继承
-
-newpage
-title:用例描述
-header:用例图
-usecase UC1 as "1. 使用换行
-来分割描述用例
---
-2. 使用双横线（减号）分割
-==
-3. 使用双等号来分割
-..虚线..
-4.使用虚线（双点）来分割
-__
-5. 使用下划线来分割
-"
-UC1 --\\ 用户
-
-newpage
-title:使用包
-header:用例图
-left to right direction    /'方向'/
-actor 客人 as g            /'角色'/
-package 店员 {    /'包1'/
-  actor 厨师 as c
-  actor 收银员 as fc
-}
-package 餐厅 {            /'包2'/
-  usecase " 吃饭 "     as UC1
-  usecase " 喝酒/喝茶 " as UC2
-  usecase " 支付 "     as UC3
-  usecase " 查账 "     as UC4
-}
-fc --> UC4
-g --> UC1
-g --> UC2
-g --> UC3
+teacher -up-> mod
+teacher -up-> query
+teacher -up-> login
+student --> query
+student --> login
 
 @enduml
