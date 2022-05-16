@@ -1,16 +1,152 @@
 @startuml
+
 start
-if (条件 A) then (yes)
-  :文本 1;
-elseif (条件 B) then (yes)
-  :文本 2;
-  stop
-elseif (条件 C) then (yes)
-  :文本 3;
-elseif (条件 D) then (yes)
-  :文本 4;
-else (nothing)
-  :文本 else;
+
+floating note
+ddd
+end note
+
+
+
+note right:开始
+#gold:登录系统;
+note right:活动
+if (条件) then (成功)
+note right:条件
+else (失败)
+
+end
+note left:子流程结束
+endif
+
+
+
+stop
+note right:结束
+
+
+
+
+
+start
+if (Get请求?) then (成功)
+      ://请求//;
+    elseif (header校验？) then (失败)
+      :**禁止操作**;
+      stop
+    elseif (参数校验？) then (失败)
+      :__授权__;
+
+      end
+    else (成功)
+      :请求;
 endif
 stop
 @enduml
+
+
+@startuml
+
+start
+:foo1;
+floating note left: 这是一个注释
+:foo2;
+note right
+  这个注释是
+  //多行的//, 同样可以
+  包含 <b>HTML</b> 文本.
+  ====
+  * 调用函数 ""foo()"" 是被禁止的。
+end note
+
+stop
+
+@enduml
+
+
+@startuml
+title if-else语句
+start
+    if (成功 ?) then (yes)
+      :执行命令;
+    else (no)
+      :__报警__;
+    endif
+stop
+@enduml
+
+
+@startuml
+title Switch语句
+start
+switch (考试 ?)
+case ( >90分 )
+  :优秀;
+case ( >=80 )
+  :良好;
+case ( >=60 )
+  :及格;
+case ( <60 )
+  :不及格;
+endswitch
+stop
+@enduml
+
+
+@startuml
+start
+floating note left:fork-end
+fork
+  :活动1;
+fork again
+  :活动2;
+end fork
+stop
+
+
+start
+floating note left:fork-merge
+fork
+  :行为 1;
+fork again
+  :行为 2;
+end merge
+stop
+
+@enduml
+
+
+
+@startuml
+skinparam ArrowHeadColor none
+start
+repeat :Enter data;
+:Submit;
+backward :Warning;
+repeat while (Valid?) is (No) not (Yes)
+stop
+@enduml
+
+@startuml
+:foo1;
+-> You can put text on arrows;
+if (test) then
+  -[#blue]->
+  :foo2;
+  -[#green,dashed]-> The text can
+  also be on several lines
+  and **very** long...;
+  :foo3;
+else
+  -[#black,dotted]->
+  :foo4;
+endif
+-[#gray,bold]->
+:foo5;
+@enduml
+
+
+
+
+https://blog.csdn.net/zhuiQingran/article/details/120361736
+

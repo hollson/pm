@@ -1,6 +1,26 @@
 @startuml
 start
 repeat
+  :键盘输入;
+    if (输入为Q ?) then (YES)
+      #gold:YES;
+'      #palegreen:
+      break
+    endif
+
+    ->  NO;
+    :判断答案;
+
+repeat while (某事发生文本过长错误?) is (是的) not (不是)
+
+-> //合并步骤//;
+:弹窗 "成功！";
+stop
+@enduml
+
+@startuml
+start
+repeat
   :测试某事;
     if (发生错误?) then (没有)
       #palegreen:好的;
@@ -13,3 +33,4 @@ repeat while (某事发生文本过长错误?) is (是的) not (不是)
 :弹窗 "成功！";
 stop
 @enduml
+
