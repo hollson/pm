@@ -1,0 +1,30 @@
+@startuml GBPC1
+title GBPC-1 分层模型
+hide circle
+'skinparam linetype ortho
+entity " <<执行者>> \nExecuter" as executer {
+}
+
+entity " <<分组>> \nGroup" as group {
+}
+
+entity " <<策略>> \nPolicy" as policy {
+  *<<元数据>> meta
+  *<<操作>> ops
+}
+
+entity " <<会话>> \nSession" as session {
+}
+
+executer }o-right-o{group:"      "
+group }o-right-o{policy:"     "
+executer ||--|| session
+group }--|| session
+group ||--o group
+note bottom of group
+在GBPC0模型之上引入了 **继承关系**，形
+成了**分组分层模型**，继承分为**一般继承**
+和**受限继承**
+end note
+@enduml
+

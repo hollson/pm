@@ -1,6 +1,4 @@
 @startuml
-newpage
-
 title:系统用例
 
 :参与者1: as act1

@@ -1,0 +1,25 @@
+@startuml GBPC0
+title GBPC-0 基础模型
+hide circle
+
+'entity executer <<泛型>>
+entity "<<执行者>>\nExecuter" as executer {
+}
+
+entity " <<分组>> \nGroup" as group {
+}
+
+entity " <<策略>> \nPolicy" as policy {
+  *<<元数据>> meta
+  *<<操作>> ops
+}
+
+entity " <<会话>> \nSession" as session {
+}
+
+executer }o-right-o{group:"      "
+group }o-right-o{policy:"     "
+executer ||--|| session
+group }--|| session
+@enduml
+

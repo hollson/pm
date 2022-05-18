@@ -1,0 +1,41 @@
+@startuml udcp-base
+title GBPC-基础应用模型
+'hide circle
+
+entity "执行者表" as executer {
+  *执行者ID  <PK>
+  执行者名
+}
+
+entity "分组表" as grouper {
+  *分组ID  <PK>
+  分组名
+}
+
+entity "策略表" as policy {
+  *策略ID  <PK>
+  策略标识符
+}
+
+entity "执行者分组关联表" as executer_grouper #99FF99 {
+  *执行者ID <FK>
+  *分组ID <FK>
+}
+
+entity "分组策略关联表" as grouper_policy #99FF99 {
+  *分组ID <FK>
+  *策略ID <FK>
+}
+
+entity "特殊策略关联表" as executer_policy #70d4ff {
+  *执行者ID <FK>
+  *策略ID <FK>
+}
+
+grouper_policy -up-> grouper
+grouper_policy -up-> policy
+executer_grouper -up-> executer
+executer_grouper -up-> grouper
+executer_policy --> policy
+executer_policy --> executer
+@enduml
