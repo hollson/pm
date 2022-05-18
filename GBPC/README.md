@@ -31,7 +31,7 @@ GBPC主要包含四个子模型：GBPC0、GBPC1、GBPC2和GBPC3。
 
 这是一种多对多的分配关系：执行者对应多个分组、分组对应多个策略。执行者与会话一对一，会话与分组一对多。
 
-![](/Users/sybs/github/pm/GBPEC/asset/GBPC0.svg)
+![](https://raw.githubusercontent.com/hollson/pm/master/GBPC/asset/GBPC0.svg)
 
 ## 2.2 GBPC1模型
 
@@ -40,7 +40,7 @@ GBPC主要包含四个子模型：GBPC0、GBPC1、GBPC2和GBPC3。
 - **一般继承：** 一般继承是一个`叠加继承`(如:小组策略=部门策略+公司策略)，允许分组间的多继承。
 - **受限继承：**: 受限继承是一个`单项继承`，它要求分组继承关系是一个树状结构，实现分组间的单继承。
 
-![](/Users/sybs/github/pm/GBPEC/asset/GBPC1.svg)
+![](https://raw.githubusercontent.com/hollson/pm/master/GBPC/asset/GBPC1.svg)
 
 ## 2.3 GBPC2模型
 
@@ -62,7 +62,7 @@ GBPC主要包含四个子模型：GBPC0、GBPC1、GBPC2和GBPC3。
 
 - 用户与终端变动不匹配的情况下，需要根据终端的域账号动态判断是否需要执行当前分组策略。
 
-![img](/Users/sybs/github/pm/GBPEC/asset/GBPC2.svg)
+![img](https://raw.githubusercontent.com/hollson/pm/master/GBPC/asset/GBPC2.svg)
 
 <br/>
 
@@ -70,7 +70,7 @@ GBPC主要包含四个子模型：GBPC0、GBPC1、GBPC2和GBPC3。
 
 **GBPC3** 是集聚了GBPC1和GBPC2的全部特点，即 **GBPC3=GBPC1+GBPC2** 。
 
-![img](/Users/sybs/github/pm/GBPEC/asset/GBPC3.svg)
+![img](https://raw.githubusercontent.com/hollson/pm/master/GBPC/asset/GBPC3.svg)
 
 <br/>
 
@@ -80,12 +80,12 @@ GBPC主要包含四个子模型：GBPC0、GBPC1、GBPC2和GBPC3。
 
 >   针对简单的策略系统，实体关系只需体现为执行者表、分组表、策略表和它们之间的关联关系。
 
-![img](/Users/sybs/github/pm/GBPEC/asset/udcp-base.svg)
+![img](https://raw.githubusercontent.com/hollson/pm/master/GBPC/asset/udcp-base.svg)
 
 ## 3.2 完整项目示例
 > 复杂的策略系统，核心实体仍然为**执行者、分组和策略**三元组，其余的实体均可抽象为**EGP扩展关联关系**，或**EGP**的**分类标签**。
 
-![img](/Users/sybs/github/pm/GBPEC/asset/udcp-full.svg)
+![img](https://raw.githubusercontent.com/hollson/pm/master/GBPC/asset/udcp-full.svg)
 
 
 
