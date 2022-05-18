@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="293px" preserveAspectRatio="none" style="width:446px;height:293px;background:#FFFFFF;" version="1.1" viewBox="0 0 446 293" width="446px" zoomAndPan="magnify"><defs><filter height="300%" id="f109q89tgmbrh8" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="102" x="165.5" y="17.4023">定义类(两种)</text><!--MD5=[aa7f586532e18719e6cefa70fc650583]
+class Object--><rect fill="#FEFECE" filter="url(#f109q89tgmbrh8)" height="60.9551" id="Object" style="stroke:#A80036;stroke-width:1.5;" width="82" x="7" y="47.6992"/><ellipse cx="27.4" cy="63.6992" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M29.8731,69.8423 Q29.2921,70.1411 28.6529,70.2905 Q28.0138,70.4399 27.3082,70.4399 Q24.8014,70.4399 23.4815,68.7881 Q22.1617,67.1362 22.1617,64.0151 Q22.1617,60.8857 23.4815,59.2339 Q24.8014,57.582 27.3082,57.582 Q28.0138,57.582 28.6612,57.7314 Q29.3087,57.8809 29.8731,58.1797 L29.8731,60.9023 Q29.2423,60.3213 28.6488,60.0515 Q28.0553,59.7817 27.4244,59.7817 Q26.0797,59.7817 25.3949,60.8484 Q24.7101,61.915 24.7101,64.0151 Q24.7101,66.1069 25.3949,67.1736 Q26.0797,68.2402 27.4244,68.2402 Q28.0553,68.2402 28.6488,67.9705 Q29.2423,67.7007 29.8731,67.1196 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="38" x="42.6" y="68.2344">Object</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="88" y1="79.6992" y2="79.6992"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="88" y1="87.6992" y2="87.6992"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="70" x="13" y="102.334">bool equals()</text><!--MD5=[ab8871ed637f40707b866ba6597734bc]
+class ArrayList--><rect fill="#FEFECE" filter="url(#f109q89tgmbrh8)" height="73.9102" id="ArrayList" style="stroke:#A80036;stroke-width:1.5;" width="82" x="7" y="205.1992"/><ellipse cx="22" cy="221.1992" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M24.4731,227.3423 Q23.8921,227.6411 23.2529,227.7905 Q22.6138,227.9399 21.9082,227.9399 Q19.4014,227.9399 18.0815,226.2881 Q16.7617,224.6362 16.7617,221.5151 Q16.7617,218.3857 18.0815,216.7339 Q19.4014,215.082 21.9082,215.082 Q22.6138,215.082 23.2612,215.2314 Q23.9087,215.3809 24.4731,215.6797 L24.4731,218.4023 Q23.8423,217.8213 23.2488,217.5515 Q22.6553,217.2817 22.0244,217.2817 Q20.6797,217.2817 19.9949,218.3484 Q19.3101,219.415 19.3101,221.5151 Q19.3101,223.6069 19.9949,224.6736 Q20.6797,225.7402 22.0244,225.7402 Q22.6553,225.7402 23.2488,225.4705 Q23.8423,225.2007 24.4731,224.6196 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="50" x="36" y="225.7344">ArrayList</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="88" y1="237.1992" y2="237.1992"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="70" x="13" y="251.834">Object[] Data</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="88" y1="258.1543" y2="258.1543"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="46" x="13" y="272.7891">int Size()</text><!--MD5=[a83d828be13d333e1fddb3d4d9d97191]
+class Handler--><rect codeLine="81" fill="#FEFECE" filter="url(#f109q89tgmbrh8)" height="80.1758" id="Handler" style="stroke:#A80036;stroke-width:1.5;" width="92" x="124" y="38.1992"/><ellipse cx="143.05" cy="57.332" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M145.5231,63.4751 Q144.9421,63.7739 144.3029,63.9233 Q143.6638,64.0728 142.9582,64.0728 Q140.4514,64.0728 139.1315,62.4209 Q137.8117,60.769 137.8117,57.6479 Q137.8117,54.5186 139.1315,52.8667 Q140.4514,51.2148 142.9582,51.2148 Q143.6638,51.2148 144.3112,51.3643 Q144.9587,51.5137 145.5231,51.8125 L145.5231,54.5352 Q144.8923,53.9541 144.2988,53.6843 Q143.7053,53.4146 143.0744,53.4146 Q141.7297,53.4146 141.0449,54.4812 Q140.3601,55.5479 140.3601,57.6479 Q140.3601,59.7397 141.0449,60.8064 Q141.7297,61.873 143.0744,61.873 Q143.7053,61.873 144.2988,61.6033 Q144.8923,61.3335 145.5231,60.7524 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="55" x="155.95" y="54.8008">«general»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="46" x="160.45" y="68.9336">Handler</text><line style="stroke:#A80036;stroke-width:1.5;" x1="125" x2="215" y1="76.4648" y2="76.4648"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="59" x="130" y="91.0996">Data char[]</text><line style="stroke:#A80036;stroke-width:1.5;" x1="125" x2="215" y1="97.4199" y2="97.4199"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="80" x="130" y="112.0547">DoSomething()</text><!--MD5=[c54ba4f61d01a424743e5a1fa0f9e38e]
+class Dummy--><rect codeLine="86" fill="#FEFECE" filter="url(#f109q89tgmbrh8)" height="99.8203" id="Dummy" style="stroke:#A80036;stroke-width:1.5;" width="94" x="251" y="28.1992"/><ellipse cx="274.1" cy="44.1992" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M276.5731,50.3423 Q275.9921,50.6411 275.3529,50.7905 Q274.7138,50.9399 274.0082,50.9399 Q271.5014,50.9399 270.1815,49.2881 Q268.8617,47.6362 268.8617,44.5151 Q268.8617,41.3857 270.1815,39.7339 Q271.5014,38.082 274.0082,38.082 Q274.7138,38.082 275.3612,38.2314 Q276.0087,38.3809 276.5731,38.6797 L276.5731,41.4023 Q275.9423,40.8213 275.3488,40.5515 Q274.7553,40.2817 274.1244,40.2817 Q272.7797,40.2817 272.0949,41.3484 Q271.4101,42.415 271.4101,44.5151 Q271.4101,46.6069 272.0949,47.6736 Q272.7797,48.7402 274.1244,48.7402 Q274.7553,48.7402 275.3488,48.4705 Q275.9423,48.2007 276.5731,47.6196 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="44" x="289.9" y="48.7344">Dummy</text><line style="stroke:#A80036;stroke-width:1.5;" x1="252" x2="344" y1="60.1992" y2="60.1992"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="67" x="257" y="74.834">string Filed1</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="82" x="257" y="87.7891">char Method1()</text><line style="stroke:#A80036;stroke-width:1.5;" x1="252" x2="344" y1="94.1094" y2="94.1094"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="81" x="257" y="108.7441">void Method1()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="59" x="257" y="121.6992">float Filed2</text><path d="M209.5,221.6992 L209.5,262.3203 A0,0 0 0 0 209.5,262.3203 L386.5,262.3203 A0,0 0 0 0 386.5,262.3203 L386.5,231.6992 L376.5,221.6992 L302,221.6992 L298,128.2392 L294,221.6992 L209.5,221.6992 A0,0 0 0 0 209.5,221.6992 " fill="#FBFB77" filter="url(#f109q89tgmbrh8)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M376.5,221.6992 L376.5,231.6992 L386.5,231.6992 L376.5,221.6992 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="141" x="215.5" y="239.2676">可以使用field或method</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="156" x="215.5" y="254.5781">标识符强制声明字段或方法</text><!--MD5=[9c77111fd5cfd3d1ba88e4ce20d27734]
+class Sex--><rect codeLine="95" fill="#FEFECE" filter="url(#f109q89tgmbrh8)" height="73.9102" id="Sex" style="stroke:#A80036;stroke-width:1.5;" width="52" x="380" y="41.1992"/><ellipse cx="395" cy="57.1992" fill="#EB937F" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M398.6143,63.6992 L390.8945,63.6992 L390.8945,51.3062 L398.6143,51.3062 L398.6143,53.4644 L393.3433,53.4644 L393.3433,56.1372 L398.1162,56.1372 L398.1162,58.2954 L393.3433,58.2954 L393.3433,61.541 L398.6143,61.541 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="20" x="409" y="61.7344">Sex</text><line style="stroke:#A80036;stroke-width:1.5;" x1="381" x2="431" y1="73.1992" y2="73.1992"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="11" x="386" y="87.834">男</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="11" x="386" y="100.7891">女</text><line style="stroke:#A80036;stroke-width:1.5;" x1="381" x2="431" y1="107.1094" y2="107.1094"/><!--MD5=[78ed3d54c6ad96fb6434a4e45aa4b5f0]
+reverse link Object to ArrayList--><path codeLine="76" d="M48,129.0792 C48,153.6692 48,182.7692 48,205.1592 " fill="none" id="Object-backto-ArrayList" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="41,128.9092,48,108.9092,55,128.9092,41,128.9092" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="49" y="171.7676">泛化</text><!--MD5=[4e9f75fb9d79fbe1c6efd094cd14ec27]
+@startuml udcp-domain-model
+title GBPC-领域模型
+'abstract        抽象
+'abstract class  抽象(等同abstract)
+'annotation      注解
+'circle          圆
+'()              圆缩写形式
+'class           类
+'diamond         菱形
+'<>              菱形写形式
+
+'enum            枚举
+interface "命令执行器" as sender
+entity    "策略管理器" as policy_manager
+entity    "策略分发器" as policy_sender
+entity    "策略解析器" as policy_parser
+sender<|..policy_manager
+policy_manager *- - policy_parser
+policy_manager *- - policy_sender
+
+
+entity      分组管理器
+
+entity       分组标签
+entity       分组规则
+
+
+abstract       "策略执行者" as Executor
+Executor  <|- - SHELL终端
+Executor  <|- - Pipe管道
+Executor  <|- - MQ订阅者
+
+'IPay<|..AliPay:【Realization】实现
+'Computer o- - Keyboards:聚合
+'Bird *- - Wing:组合
+
+' ================================================================
+newpage
+
+title 注释
+交通工具 <|- - - 公交车
+交通工具 <|- - - 摩托车
+
+
+note bottom: 注释在底部
+note top of 交通工具: 注释在顶部
+note left of 交通工具: 注释在左边
+note right of 交通工具: 注释在右边
+note on link #99FF99: 泛化(给连线添加注解)
+
+
+note "使用双点连接\n到多个对象"  as N2 #f0f0f0
+
+交通工具 .. N2
+N2 .. 公交车
+N2 .. 摩托车
+
+class Server{
+   - string Name
+   + void Run()
+   + void Run(int port)
+}
+
+note left of Server::Name
+  给属性成员添加注释
+end note
+note left of Server::Run
+  给方法添加注释
+end note
+note left of Server::"void Run(int port)"
+  给【重载】方法添加注释
+end note
+
+newpage
+title 定义类(两种)
+'方式一
+Object  <|- - ArrayList:泛化
+Object : bool equals()
+ArrayList : Object[] Data
+ArrayList : int Size()
+
+class Handler << general >>
+Handler : Data char[]
+Handler : DoSomething()
+
+'方式二
+class Dummy {
+  string Filed1
+  void Method1()
+  {field} char Method1()
+  {method} float Filed2
+}
+note bottom of Dummy:  可以使用field或method\n标识符强制声明字段或方法
+
+'枚举
+enum Sex {
+  男
+  女
+}
+@enduml
+
+@startuml udcp-domain-model
+title GBPC-领域模型
+
+interface "命令执行器" as sender
+entity    "策略管理器" as policy_manager
+entity    "策略分发器" as policy_sender
+entity    "策略解析器" as policy_parser
+sender<|..policy_manager
+policy_manager *- - policy_parser
+policy_manager *- - policy_sender
+
+
+entity      分组管理器
+
+entity       分组标签
+entity       分组规则
+
+
+abstract       "策略执行者" as Executor
+Executor  <|- - SHELL终端
+Executor  <|- - Pipe管道
+Executor  <|- - MQ订阅者
+
+
+newpage
+
+title 注释
+交通工具 <|- - - 公交车
+交通工具 <|- - - 摩托车
+
+
+note bottom: 注释在底部
+note top of 交通工具: 注释在顶部
+note left of 交通工具: 注释在左边
+note right of 交通工具: 注释在右边
+note on link #99FF99: 泛化(给连线添加注解)
+
+
+note "使用双点连接\n到多个对象"  as N2 #f0f0f0
+
+交通工具 .. N2
+N2 .. 公交车
+N2 .. 摩托车
+
+class Server{
+   - string Name
+   + void Run()
+   + void Run(int port)
+}
+
+note left of Server::Name
+  给属性成员添加注释
+end note
+note left of Server::Run
+  给方法添加注释
+end note
+note left of Server::"void Run(int port)"
+  给【重载】方法添加注释
+end note
+
+newpage
+title 定义类(两种)
+Object  <|- - ArrayList:泛化
+Object : bool equals()
+ArrayList : Object[] Data
+ArrayList : int Size()
+
+class Handler << general >>
+Handler : Data char[]
+Handler : DoSomething()
+
+class Dummy {
+  string Filed1
+  void Method1()
+  {field} char Method1()
+  {method} float Filed2
+}
+note bottom of Dummy:  可以使用field或method\n标识符强制声明字段或方法
+
+enum Sex {
+  男
+  女
+}
+@enduml
+
+PlantUML version 1.2022.0(Wed Jan 12 00:16:42 CST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: zh
+Country: CN
+--></g></svg>

@@ -3,8 +3,8 @@ title GBPC-2 约束模型
 '隐藏Entity标识
 hide circle
 
-'entity executer <<泛型>>
-entity " <<执行者>> \nExecuter" as executer {
+'entity executor <<泛型>>
+entity " <<执行者>> \nExecutor" as executor {
 }
 
 entity " <<分组>> \nGroup" as group {
@@ -30,11 +30,11 @@ note right of dsd
 终端与域账号、终端与硬件环境等动态制约
 end note
 
-ssd -- executer
+ssd -- executor
 ssd -- group
-executer }o-right-o{group:"           "
+executor }o-right-o{group:"           "
 group }o-right-o{policy:"          "
-executer ||--|| session
+executor ||--|| session
 group }--|| session
 dsd -up- group
 dsd -left- session:"                      "

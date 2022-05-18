@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="548px" preserveAspectRatio="none" style="width:579px;height:548px;background:#FFFFFF;" version="1.1" viewBox="0 0 579 548" width="579px" zoomAndPan="magnify"><defs><filter height="300%" id="f109q89tgmbrh8" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="36" x="265.25" y="17.4023">注释</text><!--MD5=[4dc1cf0fc1dc331c6f5f55380ad474b4]
+class 交通工具--><rect fill="#FEFECE" filter="url(#f109q89tgmbrh8)" height="48" id="交通工具" style="stroke:#A80036;stroke-width:1.5;" width="80" x="127" y="194.1992"/><ellipse cx="142" cy="210.1992" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M144.4731,216.3423 Q143.8921,216.6411 143.2529,216.7905 Q142.6138,216.9399 141.9082,216.9399 Q139.4014,216.9399 138.0815,215.2881 Q136.7617,213.6362 136.7617,210.5151 Q136.7617,207.3857 138.0815,205.7339 Q139.4014,204.082 141.9082,204.082 Q142.6138,204.082 143.2612,204.2314 Q143.9087,204.3809 144.4731,204.6797 L144.4731,207.4023 Q143.8423,206.8213 143.2488,206.5515 Q142.6553,206.2817 142.0244,206.2817 Q140.6797,206.2817 139.9949,207.3484 Q139.3101,208.415 139.3101,210.5151 Q139.3101,212.6069 139.9949,213.6736 Q140.6797,214.7402 142.0244,214.7402 Q142.6553,214.7402 143.2488,214.4705 Q143.8423,214.2007 144.4731,213.6196 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="48" x="156" y="214.7344">交通工具</text><line style="stroke:#A80036;stroke-width:1.5;" x1="128" x2="206" y1="226.1992" y2="226.1992"/><line style="stroke:#A80036;stroke-width:1.5;" x1="128" x2="206" y1="234.1992" y2="234.1992"/><!--MD5=[b2c47422491dd78ca0e879fbb294d170]
+class 公交车--><rect fill="#FEFECE" filter="url(#f109q89tgmbrh8)" height="48" id="公交车" style="stroke:#A80036;stroke-width:1.5;" width="68" x="61" y="405.1992"/><ellipse cx="76" cy="421.1992" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M78.4731,427.3423 Q77.8921,427.6411 77.2529,427.7905 Q76.6138,427.9399 75.9082,427.9399 Q73.4014,427.9399 72.0815,426.2881 Q70.7617,424.6362 70.7617,421.5151 Q70.7617,418.3857 72.0815,416.7339 Q73.4014,415.082 75.9082,415.082 Q76.6138,415.082 77.2612,415.2314 Q77.9087,415.3809 78.4731,415.6797 L78.4731,418.4023 Q77.8423,417.8213 77.2488,417.5515 Q76.6553,417.2817 76.0244,417.2817 Q74.6797,417.2817 73.9949,418.3484 Q73.3101,419.415 73.3101,421.5151 Q73.3101,423.6069 73.9949,424.6736 Q74.6797,425.7402 76.0244,425.7402 Q76.6553,425.7402 77.2488,425.4705 Q77.8423,425.2007 78.4731,424.6196 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="36" x="90" y="425.7344">公交车</text><line style="stroke:#A80036;stroke-width:1.5;" x1="62" x2="128" y1="437.1992" y2="437.1992"/><line style="stroke:#A80036;stroke-width:1.5;" x1="62" x2="128" y1="445.1992" y2="445.1992"/><!--MD5=[008f31a959aee8104b17ae21060f905e]
+class 摩托车--><rect fill="#FEFECE" filter="url(#f109q89tgmbrh8)" height="48" id="摩托车" style="stroke:#A80036;stroke-width:1.5;" width="68" x="208" y="405.1992"/><ellipse cx="223" cy="421.1992" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M225.4731,427.3423 Q224.8921,427.6411 224.2529,427.7905 Q223.6138,427.9399 222.9082,427.9399 Q220.4014,427.9399 219.0815,426.2881 Q217.7617,424.6362 217.7617,421.5151 Q217.7617,418.3857 219.0815,416.7339 Q220.4014,415.082 222.9082,415.082 Q223.6138,415.082 224.2612,415.2314 Q224.9087,415.3809 225.4731,415.6797 L225.4731,418.4023 Q224.8423,417.8213 224.2488,417.5515 Q223.6553,417.2817 223.0244,417.2817 Q221.6797,417.2817 220.9949,418.3484 Q220.3101,419.415 220.3101,421.5151 Q220.3101,423.6069 220.9949,424.6736 Q221.6797,425.7402 223.0244,425.7402 Q223.6553,425.7402 224.2488,425.4705 Q224.8423,425.2007 225.4731,424.6196 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="36" x="237" y="425.7344">摩托车</text><line style="stroke:#A80036;stroke-width:1.5;" x1="209" x2="275" y1="437.1992" y2="437.1992"/><line style="stroke:#A80036;stroke-width:1.5;" x1="209" x2="275" y1="445.1992" y2="445.1992"/><path d="M199,514.1992 L199,539.5098 A0,0 0 0 0 199,539.5098 L285,539.5098 A0,0 0 0 0 285,539.5098 L285,524.1992 L275,514.1992 L246,514.1992 L242,453.3192 L238,514.1992 L199,514.1992 A0,0 0 0 0 199,514.1992 " fill="#FBFB77" filter="url(#f109q89tgmbrh8)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M275,514.1992 L275,524.1992 L285,524.1992 L275,514.1992 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="65" x="205" y="531.7676">注释在底部</text><path d="M124,67.6992 L124,93.0098 A0,0 0 0 0 124,93.0098 L163,93.0098 L167,193.9692 L171,93.0098 L210,93.0098 A0,0 0 0 0 210,93.0098 L210,77.6992 L200,67.6992 L124,67.6992 A0,0 0 0 0 124,67.6992 " fill="#FBFB77" filter="url(#f109q89tgmbrh8)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M200,67.6992 L200,77.6992 L210,77.6992 L200,67.6992 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="65" x="130" y="85.2676">注释在顶部</text><path d="M6,205.6992 L6,231.0098 A0,0 0 0 0 6,231.0098 L92,231.0098 A0,0 0 0 0 92,231.0098 L92,223.6992 L126.75,218.1992 L92,215.6992 L92,215.6992 L82,205.6992 L6,205.6992 A0,0 0 0 0 6,205.6992 " fill="#FBFB77" filter="url(#f109q89tgmbrh8)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M82,205.6992 L82,215.6992 L92,215.6992 L82,205.6992 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="65" x="12" y="223.2676">注释在左边</text><path d="M242,205.6992 L242,214.1992 L207.1,218.1992 L242,222.1992 L242,231.0098 A0,0 0 0 0 242,231.0098 L328,231.0098 A0,0 0 0 0 328,231.0098 L328,215.6992 L318,205.6992 L242,205.6992 A0,0 0 0 0 242,205.6992 " fill="#FBFB77" filter="url(#f109q89tgmbrh8)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M318,205.6992 L318,215.6992 L328,215.6992 L318,205.6992 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="65" x="248" y="223.2676">注释在右边</text><path d="M117.5,303.1992 L117.5,343.8203 L216.5,343.8203 L216.5,313.1992 L206.5,303.1992 L117.5,303.1992 " fill="#F0F0F0" filter="url(#f109q89tgmbrh8)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M206.5,303.1992 L206.5,313.1992 L216.5,313.1992 L206.5,303.1992 " fill="#F0F0F0" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="78" x="123.5" y="320.7676">使用双点连接</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="65" x="123.5" y="336.0781">到多个对象</text><!--MD5=[c60af77fe5573b84a4aa4bce89659574]
+class Server--><rect codeLine="57" fill="#FEFECE" filter="url(#f109q89tgmbrh8)" height="86.8652" id="Server" style="stroke:#A80036;stroke-width:1.5;" width="121" x="444.5" y="36.6992"/><ellipse cx="483.35" cy="52.6992" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M485.8231,58.8423 Q485.2421,59.1411 484.6029,59.2905 Q483.9638,59.4399 483.2582,59.4399 Q480.7514,59.4399 479.4315,57.7881 Q478.1117,56.1362 478.1117,53.0151 Q478.1117,49.8857 479.4315,48.2339 Q480.7514,46.582 483.2582,46.582 Q483.9638,46.582 484.6112,46.7314 Q485.2587,46.8809 485.8231,47.1797 L485.8231,49.9023 Q485.1923,49.3213 484.5988,49.0515 Q484.0053,48.7817 483.3744,48.7817 Q482.0297,48.7817 481.3449,49.8484 Q480.6601,50.915 480.6601,53.0151 Q480.6601,55.1069 481.3449,56.1736 Q482.0297,57.2402 483.3744,57.2402 Q484.0053,57.2402 484.5988,56.9705 Q485.1923,56.7007 485.8231,56.1196 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="36" x="502.65" y="57.2344">Server</text><line style="stroke:#A80036;stroke-width:1.5;" x1="445.5" x2="564.5" y1="68.6992" y2="68.6992"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="452.5" y="76.6992"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="65" x="464.5" y="83.334">string Name</text><line style="stroke:#A80036;stroke-width:1.5;" x1="445.5" x2="564.5" y1="89.6543" y2="89.6543"/><ellipse cx="455.5" cy="100.6543" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="55" x="464.5" y="104.2891">void Run()</text><ellipse cx="455.5" cy="113.6094" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="464.5" y="117.2441">void Run(int port)</text><path d="M245,27.1992 L245,52.5098 A0,0 0 0 0 245,52.5098 L383,52.5098 A0,0 0 0 0 383,52.5098 L383,45.1992 L448.5,79.1768 L383,37.1992 L383,37.1992 L373,27.1992 L245,27.1992 A0,0 0 0 0 245,27.1992 " fill="#FBFB77" filter="url(#f109q89tgmbrh8)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M373,27.1992 L373,37.1992 L383,37.1992 L373,27.1992 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="117" x="251" y="44.7676">给属性成员添加注释</text><path d="M245,62.5098 L245,87.8203 A0,0 0 0 0 245,87.8203 L357,87.8203 A0,0 0 0 0 357,87.8203 L357,80.5098 L448.5,100.1318 L357,72.5098 L357,72.5098 L347,62.5098 L245,62.5098 A0,0 0 0 0 245,62.5098 " fill="#FBFB77" filter="url(#f109q89tgmbrh8)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M347,62.5098 L347,72.5098 L357,72.5098 L347,62.5098 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="91" x="251" y="80.0781">给方法添加注释</text><path d="M245,97.8203 L245,123.1309 A0,0 0 0 0 245,123.1309 L409,123.1309 A0,0 0 0 0 409,123.1309 L409,115.8203 L448.5,113.0869 L409,107.8203 L409,107.8203 L399,97.8203 L245,97.8203 A0,0 0 0 0 245,97.8203 " fill="#FBFB77" filter="url(#f109q89tgmbrh8)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M399,97.8203 L399,107.8203 L409,107.8203 L399,97.8203 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="143" x="251" y="115.3887">给【重载】方法添加注释</text><!--MD5=[0c2fbf0afde4a93b1fc1b9bf3c22fa13]
+reverse link 交通工具 to 公交车--><path codeLine="40" d="M128.27,257.2692 C117.07,270.6592 106.2,286.5492 100,303.1992 C87.49,336.7792 89.03,378.9992 91.7,404.7692 " fill="none" id="交通工具-backto-公交车" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="123.2,252.4392,141.8,242.2892,133.58,261.8192,123.2,252.4392" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b27df568ad4f995cb7bf129e465cd8a5]
+reverse link 交通工具 to 摩托车--><path codeLine="41" d="M205.5,257.3492 C216.68,270.7492 227.6,286.6192 234,303.1992 C246.93,336.6692 246.51,378.9192 244.59,404.7292 " fill="none" id="交通工具-backto-摩托车" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="200.18,261.9092,192.01,242.3592,210.59,252.5492,200.18,261.9092" style="stroke:#A80036;stroke-width:1.0;"/><path d="M248,309.1992 L248,334.1992 L394,334.1992 L394,319.1992 L384,309.1992 L248,309.1992 " fill="#99FF99" filter="url(#f109q89tgmbrh8)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M384,309.1992 L384,319.1992 L394,319.1992 L384,309.1992 " fill="#99FF99" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="125" x="254" y="326.7676">泛化(给连线添加注解)</text><!--MD5=[50a0e6e831312a44fc4997f21c8a4b9a]
+link 交通工具 to N2--><path codeLine="53" d="M167,242.4292 C167,260.6692 167,285.7792 167,303.0292 " fill="none" id="交通工具-N2" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><!--MD5=[22b009749608181405bd05a7cc83d320]
+link N2 to 公交车--><path codeLine="54" d="M153.12,344.6592 C141.1,361.9292 123.72,386.9092 111.1,405.0492 " fill="none" id="N2-公交车" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><!--MD5=[443c5947fb5a87e07a4ddd130606d410]
+link N2 to 摩托车--><path codeLine="55" d="M181.46,344.6592 C193.98,361.9292 212.08,386.9092 225.23,405.0492 " fill="none" id="N2-摩托车" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><!--MD5=[3acbdececb1ec70f911e358bc38447e9]
+link Server$$$LEFT to Server--><!--MD5=[4e9f75fb9d79fbe1c6efd094cd14ec27]
+@startuml udcp-domain-model
+title GBPC-领域模型
+'abstract        抽象
+'abstract class  抽象(等同abstract)
+'annotation      注解
+'circle          圆
+'()              圆缩写形式
+'class           类
+'diamond         菱形
+'<>              菱形写形式
+
+'enum            枚举
+interface "命令执行器" as sender
+entity    "策略管理器" as policy_manager
+entity    "策略分发器" as policy_sender
+entity    "策略解析器" as policy_parser
+sender<|..policy_manager
+policy_manager *- - policy_parser
+policy_manager *- - policy_sender
+
+
+entity      分组管理器
+
+entity       分组标签
+entity       分组规则
+
+
+abstract       "策略执行者" as Executor
+Executor  <|- - SHELL终端
+Executor  <|- - Pipe管道
+Executor  <|- - MQ订阅者
+
+'IPay<|..AliPay:【Realization】实现
+'Computer o- - Keyboards:聚合
+'Bird *- - Wing:组合
+
+' ================================================================
+newpage
+
+title 注释
+交通工具 <|- - - 公交车
+交通工具 <|- - - 摩托车
+
+
+note bottom: 注释在底部
+note top of 交通工具: 注释在顶部
+note left of 交通工具: 注释在左边
+note right of 交通工具: 注释在右边
+note on link #99FF99: 泛化(给连线添加注解)
+
+
+note "使用双点连接\n到多个对象"  as N2 #f0f0f0
+
+交通工具 .. N2
+N2 .. 公交车
+N2 .. 摩托车
+
+class Server{
+   - string Name
+   + void Run()
+   + void Run(int port)
+}
+
+note left of Server::Name
+  给属性成员添加注释
+end note
+note left of Server::Run
+  给方法添加注释
+end note
+note left of Server::"void Run(int port)"
+  给【重载】方法添加注释
+end note
+
+newpage
+title 定义类(两种)
+'方式一
+Object  <|- - ArrayList:泛化
+Object : bool equals()
+ArrayList : Object[] Data
+ArrayList : int Size()
+
+class Handler << general >>
+Handler : Data char[]
+Handler : DoSomething()
+
+'方式二
+class Dummy {
+  string Filed1
+  void Method1()
+  {field} char Method1()
+  {method} float Filed2
+}
+note bottom of Dummy:  可以使用field或method\n标识符强制声明字段或方法
+
+'枚举
+enum Sex {
+  男
+  女
+}
+@enduml
+
+@startuml udcp-domain-model
+title GBPC-领域模型
+
+interface "命令执行器" as sender
+entity    "策略管理器" as policy_manager
+entity    "策略分发器" as policy_sender
+entity    "策略解析器" as policy_parser
+sender<|..policy_manager
+policy_manager *- - policy_parser
+policy_manager *- - policy_sender
+
+
+entity      分组管理器
+
+entity       分组标签
+entity       分组规则
+
+
+abstract       "策略执行者" as Executor
+Executor  <|- - SHELL终端
+Executor  <|- - Pipe管道
+Executor  <|- - MQ订阅者
+
+
+newpage
+
+title 注释
+交通工具 <|- - - 公交车
+交通工具 <|- - - 摩托车
+
+
+note bottom: 注释在底部
+note top of 交通工具: 注释在顶部
+note left of 交通工具: 注释在左边
+note right of 交通工具: 注释在右边
+note on link #99FF99: 泛化(给连线添加注解)
+
+
+note "使用双点连接\n到多个对象"  as N2 #f0f0f0
+
+交通工具 .. N2
+N2 .. 公交车
+N2 .. 摩托车
+
+class Server{
+   - string Name
+   + void Run()
+   + void Run(int port)
+}
+
+note left of Server::Name
+  给属性成员添加注释
+end note
+note left of Server::Run
+  给方法添加注释
+end note
+note left of Server::"void Run(int port)"
+  给【重载】方法添加注释
+end note
+
+newpage
+title 定义类(两种)
+Object  <|- - ArrayList:泛化
+Object : bool equals()
+ArrayList : Object[] Data
+ArrayList : int Size()
+
+class Handler << general >>
+Handler : Data char[]
+Handler : DoSomething()
+
+class Dummy {
+  string Filed1
+  void Method1()
+  {field} char Method1()
+  {method} float Filed2
+}
+note bottom of Dummy:  可以使用field或method\n标识符强制声明字段或方法
+
+enum Sex {
+  男
+  女
+}
+@enduml
+
+PlantUML version 1.2022.0(Wed Jan 12 00:16:42 CST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: zh
+Country: CN
+--></g></svg>

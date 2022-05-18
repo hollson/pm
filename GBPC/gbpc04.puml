@@ -3,8 +3,8 @@ title GBPC-3 组合模型
 '隐藏Entity标识
 hide circle
 
-'entity executer <<泛型>>
-entity " <<执行者>> \nExecuter" as executer {
+'entity executor <<泛型>>
+entity " <<执行者>> \nExecutor" as executor {
 }
 
 entity " <<分组>> \nGroup" as group {
@@ -24,11 +24,11 @@ entity " <<静态职责分离>> \nSSD" as ssd #70d4ff {
 entity " <<动态职责分离>> \nDSD" as dsd #fd953b {
 }
 
-ssd -- executer
+ssd -- executor
 ssd -- group
-executer }o-right-o{group:"           "
+executor }o-right-o{group:"           "
 group }o-right-o{policy:"          "
-executer ||--|| session
+executor ||--|| session
 group }--|| session
 group ||--o group
 dsd -up- group

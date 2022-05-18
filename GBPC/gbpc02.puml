@@ -2,7 +2,7 @@
 title GBPC-1 分层模型
 hide circle
 'skinparam linetype ortho
-entity " <<执行者>> \nExecuter" as executer {
+entity " <<执行者>> \nExecutor" as executor {
 }
 
 entity " <<分组>> \nGroup" as group {
@@ -16,9 +16,9 @@ entity " <<策略>> \nPolicy" as policy {
 entity " <<会话>> \nSession" as session {
 }
 
-executer }o-right-o{group:"      "
+executor }o-right-o{group:"      "
 group }o-right-o{policy:"     "
-executer ||--|| session
+executor ||--|| session
 group }--|| session
 group ||--o group
 note bottom of group
